@@ -9,8 +9,8 @@ export default function Home() {
         <img src={'pfp.png'} alt="Profile Picture" class="about-img" />
         <div class="about-txt">
           <h1>Leon Dong</h1>
-          <p>I'm a 3rd year computer science student @ UWaterloo.</p>
-          <p>Previously, I interned as a mobile eng @ Ecobee, Facedrive and I'm an incoming mobile eng intern @ LinkedIn.</p> 
+          <p>I&apos;m a 3rd year computer science student @ UWaterloo.</p>
+          <p>Previously, I interned as a mobile eng @ Ecobee, Facedrive and I&apos;m an incoming mobile eng intern @ LinkedIn.</p> 
           <a href='Resume.pdf' target="_blank" rel="noreferrer">
               <u>Resume</u>
           </a>
