@@ -1,0 +1,6 @@
+- window size responsiveness
+- mobile display
+- spotify display (triho.dev)
+- link on pfp
+    - temp notion page
+    - implement super cool awesome filesystem later on

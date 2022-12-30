@@ -1,10 +1,13 @@
 import Links from './components/links.js'
 import Spotify from './components/spotify'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head'
 
 export default function Home() {
   return (
     <div>
+      <Head>
+        <title>Zero Ultra</title>
+      </Head>
       <div class="about-body">
         <img src={'pfp.png'} alt="Profile Picture" class="about-img" />
         <div class="about-txt">
