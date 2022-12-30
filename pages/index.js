@@ -21,6 +21,8 @@ export default function Home() {
       </div>
       <Links />
       <Spotify />
+      <p>Website very WIP</p>
+      <p>Built with blood, sweat, and Monster™ Zero Ultra</p>
     </div>
   )
 }
