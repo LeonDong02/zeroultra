@@ -20,9 +20,6 @@ const getAccessToken = async () => {
             }),
         });
 
-        console.log("Env vars: ", client_id, client_secret, refresh_token);
-        console.log("Access token resp: ", response);
-
         return await response.json();
     } catch (e) {
         console.error(e);
@@ -31,7 +28,6 @@ const getAccessToken = async () => {
 
 export const currentlyPlayingSong = async () => {
     const { access_token } = await getAccessToken();
-    console.log("Token: ", access_token);
 
     try {
         const response = await fetch(
@@ -53,7 +49,6 @@ export default async function handler(req, res) {
     let song;
     try {
         song = await currentlyPlayingSong();
-        console.log("Song: ", song);
 
         if (!song.item || !song.is_playing) {
             return new Error();
