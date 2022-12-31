@@ -46,12 +46,13 @@ export default async function handler(req, res) {
     try {
         song = await currentlyPlayingSong();
 
-        if (Object.keys(song.item).length === 0 || !song.is_playing) {
+        if (!song || Object.keys(song.item).length === 0 || !song.is_playing) {
             throw new Error();
         }
     } catch (e) {
-        console.log(e);
-        return res.status(200).json({ isPlaying: false });
+        return res
+            .status(200)
+            .json({ isPlaying: false, error: JSON.stringify(e) });
     }
 
     return res.status(200).json({
