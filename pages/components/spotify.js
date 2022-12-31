@@ -10,11 +10,15 @@ export default function NowPlaying() {
       <div>
         {data?.songUrl && data?.isPlaying ? (
           <a href={data.songUrl} target="_blank" rel="noopener noreferrer">
-            {data.title + " - " + data?.artist}
+            <u>
+                {data.title + " - " + data?.artist}
+            </u>
           </a>
         ) : (
           <a href="https://open.spotify.com/user/22offyqbuyz7qehcrv7sssa4y?si=6a8ebdaecab045e3" target="_blank" rel="noopener noreferrer">
-            Not currently listening
+            <u>
+                Not currently listening
+            </u>
           </a>
         )}
       </div>
