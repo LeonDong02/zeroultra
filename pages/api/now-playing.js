@@ -36,16 +36,13 @@ export const currentlyPlayingSong = async () => {
 };
 
 export default async function handler(req, res) {
-    let song;
-    try {
-        song = await currentlyPlayingSong();
-    } catch (e) {
-        return res
-            .status(200)
-            .json({ isPlaying: false, error: JSON.stringify(e) });
-    }
+    const song = await currentlyPlayingSong();
 
-    if (!song || Object.keys(song.item).length === 0 || !song.is_playing) {
+    if (
+        !song?.item ||
+        Object.keys(song.item).length === 0 ||
+        !song.is_playing
+    ) {
         return res.status(200).json({ isPlaying: false });
     }
 
