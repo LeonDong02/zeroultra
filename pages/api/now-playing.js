@@ -1,8 +1,8 @@
-const {
-    SPOTIFY_CLIENT_ID: client_id,
-    SPOTIFY_CLIENT_SECRET: client_secret,
-    SPOTIFY_REFRESH_TOKEN: refresh_token,
-} = process.env;
+import { NextApiRequest, NextApiResponse } from "next";
+
+// ENV vars
+const { SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_REFRESH_TOKEN } =
+    process.env;
 
 const getAccessToken = async () => {
     try {
@@ -10,13 +10,13 @@ const getAccessToken = async () => {
             method: "POST",
             headers: {
                 Authorization: `Basic ${Buffer.from(
-                    `${client_id}:${client_secret}`
+                    `${SPOTIFY_CLIENT_ID}:${SPOTIFY_CLIENT_SECRET}`
                 ).toString("base64")}`,
                 "Content-Type": "application/x-www-form-urlencoded",
             },
             body: new URLSearchParams({
                 grant_type: "refresh_token",
-                refresh_token,
+                refresh_token: SPOTIFY_REFRESH_TOKEN ?? "",
             }),
         });
 
@@ -29,20 +29,16 @@ const getAccessToken = async () => {
 export const currentlyPlayingSong = async () => {
     const { access_token } = await getAccessToken();
 
-    try {
-        const response = await fetch(
-            "https://api.spotify.com/v1/me/player/currently-playing",
-            {
-                headers: {
-                    Authorization: `Bearer ${access_token}`,
-                },
-            }
-        );
+    const response = await await fetch(
+        "https://api.spotify.com/v1/me/player/currently-playing",
+        {
+            headers: {
+                Authorization: `Bearer ${access_token}`,
+            },
+        }
+    );
 
-        return await response.json();
-    } catch (e) {
-        console.error(e);
-    }
+    return await response.json();
 };
 
 export default async function handler(req, res) {
@@ -50,26 +46,20 @@ export default async function handler(req, res) {
     try {
         song = await currentlyPlayingSong();
 
-        if (!song.item || !song.is_playing) {
-            return new Error();
+        if (Object.keys(song.item).length === 0 || !song.is_playing) {
+            throw new Error();
         }
-    } catch {
+    } catch (e) {
+        console.log(e);
         return res.status(200).json({ isPlaying: false });
     }
 
-    const isPlaying = song.is_playing;
-    const title = song.item.name;
-    const artist = song.item.artists.map((_artist) => _artist.name).join(", ");
-    const album = song.item.album.name;
-    const albumImageUrl = song.item.album.images[0].url;
-    const songUrl = song.item.external_urls.spotify;
-
     return res.status(200).json({
-        album,
-        albumImageUrl,
-        artist,
-        isPlaying,
-        songUrl,
-        title,
+        album: song.item.album.name,
+        albumImageUrl: song.item.album.images[0].url,
+        artist: song.item.artists.map((_artist) => _artist.name).join(", "),
+        isPlaying: song.is_playing,
+        songUrl: song.item.external_urls.spotify,
+        title: song.item.name,
     });
 }
