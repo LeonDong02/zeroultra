@@ -57,6 +57,7 @@ u:hover {
 .links {
   display: flex;
   flex-direction: row;
+  padding: 0 0 10px 0
 }
 
 .icon {
