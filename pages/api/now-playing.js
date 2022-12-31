@@ -22,6 +22,7 @@ const getAccessToken = async () => {
 
 export const currentlyPlayingSong = async () => {
     const { access_token } = await getAccessToken();
+    console.error("Access token: ", access_token);
 
     const response = await fetch(
         "https://api.spotify.com/v1/me/player/currently-playing",
@@ -37,13 +38,16 @@ export const currentlyPlayingSong = async () => {
 
 export default async function handler(req, res) {
     const song = await currentlyPlayingSong();
+    console.error("Song: ", song);
 
     if (
         !song?.item ||
         Object.keys(song.item).length === 0 ||
         !song.is_playing
     ) {
-        return res.status(200).json({ isPlaying: false });
+        return res
+            .status(200)
+            .json({ isPlaying: false, data: JSON.stringify(song) });
     }
 
     return res.status(200).json({
