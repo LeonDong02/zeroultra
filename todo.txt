@@ -5,3 +5,7 @@
 - link on pfp
     - temp notion page
     - implement super cool awesome filesystem later on
+
+- project links?
+- blog?
+- consolodated feed?
