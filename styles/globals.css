@@ -2,13 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@media only screen and (min-width: 768px) {
+  html,
+  body {
+    display: block;
+    width: 748px;
+    margin: auto auto 1em;
+    padding: 0 10px;
+  }
+}
+
 html,
 body {
   color-scheme: dark;
   color: white;
   background: rgb(15, 15, 15);
-  display: block;
-  margin: auto auto 1em;
-  padding: 0 10px;
-  width: 768px;
 }
