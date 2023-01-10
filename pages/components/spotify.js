@@ -88,12 +88,13 @@ export default function NowPlaying() {
                         </a>
                     </div>
                 ) : (
-                    <span>
-                        Now playing:&nbsp;
+                    <div class="truncate">
+                        Now playing:
+                        <br></br>
                         <a href="https://open.spotify.com/user/22offyqbuyz7qehcrv7sssa4y?si=6a8ebdaecab045e3" target="_blank" rel="noopener noreferrer" class="transition ease-in-out underline hover:text-stone-400 duration-100">
                             Not currently listening
                         </a>
-                    </span>
+                    </div>
                     
                 )}
             </nobr>

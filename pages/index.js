@@ -13,7 +13,7 @@ export default function Home() {
           <img src={'pfp.png'} alt="Profile Picture" />
         </div>
         <div class="basis-3/4 px-12">
-          <div class="text-3xl font-bold my-1.5 md:my-3">Leon Dong</div>
+          <div class="text-3xl font-bold my-1.5 md:my-2.5">Leon Dong</div>
           <p>
             I&apos;m a 3rd year computer science student with a minor in combinatorics and optimization @ UWaterloo.
           </p>
