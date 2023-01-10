@@ -85,7 +85,7 @@ export default function NowPlaying() {
                         <p class="truncate">
                             Now playing:
                             <br></br>
-                            <a href={data.songUrl} target="_blank" rel="noopener noreferrer" class="underline">
+                            <a href={data.songUrl} target="_blank" rel="noopener noreferrer" class="transition ease-in-out underline hover:text-stone-400 duration-100" >
                                 {data.title + " - " + data?.artist}
                             </a>
                         </p>
