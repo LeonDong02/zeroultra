@@ -82,10 +82,13 @@ export default function NowPlaying() {
             <nobr>
                 {data?.songUrl && data?.isPlaying ? (
                     <div>
-                        Now playing:&nbsp;
-                        <a href={data.songUrl} target="_blank" rel="noopener noreferrer" class="underline">
-                            {data.title + " - " + data?.artist}
-                        </a>
+                        <p class="truncate">
+                            Now playing:
+                            <br></br>
+                            <a href={data.songUrl} target="_blank" rel="noopener noreferrer" class="underline">
+                                {data.title + " - " + data?.artist}
+                            </a>
+                        </p>
                     </div>
                 ) : (
                     <div>
