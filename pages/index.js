@@ -4,11 +4,11 @@ import Head from 'next/head'
 
 export default function Home() {
   return (
-    <div class="font-sans text-[15px] leading-[1.15] w-[80vw] md:w-full mx-auto">
+    <div class="font-sans text-[15px] leading-[1.15] w-[90vw] md:w-full mx-auto">
       <Head>
         <title>Zero Ultra</title>
       </Head>
-      <div class="flex flex-col md:flex-row h-100 md:h-48 mt-20 md:mt-28 mb-4">
+      <div class="flex flex-col md:flex-row h-100 md:h-48 mt-16 md:mt-28 mb-4">
         <div class="basis-1/4 px-12 md:px-0">
           <img src={'pfp.png'} alt="Profile Picture" />
         </div>

@@ -97,7 +97,6 @@ export default function NowPlaying() {
                             </a>
                         </p>
                     </div>
-                    
                 )}
             </nobr>
         </div>
