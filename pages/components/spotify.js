@@ -83,20 +83,20 @@ export default function NowPlaying() {
                 {data?.songUrl && data?.isPlaying ? (
                     <div>
                         <p class="truncate">
-                            Now playing:
+                            now playing:
                             <br></br>
                             <a href={data.songUrl} target="_blank" rel="noopener noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100" >
-                                {data.title + " - " + data?.artist}
+                                {data.title.toLowerCase() + " - " + data?.artist.toLowerCase()}
                             </a>
                         </p>
                     </div>
                 ) : (
                     <div>
                         <p class="truncate">
-                            Now playing:
+                            now playing:
                             <br></br>
                             <a href="https://open.spotify.com/user/22offyqbuyz7qehcrv7sssa4y?si=6a8ebdaecab045e3" target="_blank" rel="noopener noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
-                                Not currently listening
+                                not currently listening
                             </a>
                         </p>
                     </div>
