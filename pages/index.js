@@ -9,18 +9,18 @@ export default function Home() {
         <title>Zero Ultra</title>
       </Head>
       <div class="flex flex-col md:flex-row h-100 md:h-48 mt-16 md:mt-28 mb-4">
-        <div class="basis-1/4 px-12 md:px-0">
+        <div class="basis-full md:basis-1/4 px-12 md:px-0">
           <img src={'pfp.png'} alt="Profile Picture" />
         </div>
-        <div class="basis-3/4 px-12">
+        <div class="basis-full md:basis-3/4 px-12">
           <div class="text-3xl font-bold my-1.5 md:my-2.5">Leon Dong</div>
-          <p>
+          <div>
             I&apos;m a 3rd year computer science student with a minor in combinatorics and optimization @ UWaterloo.
-          </p>
+          </div>
           <br></br>
-          <p>
+          <div>
             Previously, I was a mobile eng intern @ Ecobee, Facedrive and I&apos;m an incoming mobile eng intern @ LinkedIn.
-          </p>
+          </div>
           <br></br>
           <a href='Resume.pdf' target="_blank" rel="noreferrer" class="transition ease-in-out underline hover:text-stone-400 duration-100">
             Resume
