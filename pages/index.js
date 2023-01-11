@@ -22,7 +22,7 @@ export default function Home() {
           <div>
             i&apos;m an incoming mobile eng intern @&nbsp;
             <a href='https://www.linkedin.com' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">linkedin</a> 
-            &nbsp;and previously, I was a mobile eng intern @&nbsp;
+            &nbsp;and previously, i was a mobile eng intern @&nbsp;
             <a href='https://www.ecobee.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">ecobee</a>
             ,&nbsp;
             <a href='https://steeresg.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">facedrive</a>.
