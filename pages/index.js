@@ -39,7 +39,7 @@ export default function Home() {
         <div class="text-xl font-bold">
           other cool stuff
         </div>
-        <div class="flex flex-col md:flex-row mb-1.5 md:mb-0">
+        <div class="flex flex-col md:flex-row mb-1 md:mb-0">
           <div class="basis-1/2">
             <ul>
               <li>
