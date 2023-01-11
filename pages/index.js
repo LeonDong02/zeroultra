@@ -16,19 +16,14 @@ export default function Home() {
           <div class="text-3xl font-bold my-1.5 md:my-2.5">leon dong</div>
           <div>
             i&apos;m a 3rd year computer science student with a minor in combinatorics and optimization @&nbsp;
-            <a href='https://uwaterloo.ca/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">uwaterloo</a>.
+            <a href='https://uwaterloo.ca/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-900 duration-100">uwaterloo</a>.
           </div>
           <br></br>
           <div>
-            i&apos;m an incoming mobile eng intern @&nbsp;
-            <a href='https://www.linkedin.com' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">linkedin</a> 
-            &nbsp;and previously, i was a mobile eng intern @&nbsp;
-            <a href='https://www.ecobee.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">ecobee</a>
-            ,&nbsp;
-            <a href='https://steeresg.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">facedrive</a>.
+            i&apos;m an incoming mobile eng intern @ <a href='https://www.linkedin.com' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-900 duration-100">linkedin</a> and previously, i was a mobile eng intern @ <a href='https://www.ecobee.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-900 duration-100">ecobee</a>, <a href='https://steeresg.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-900 duration-100">facedrive</a>.
           </div>
           <br></br>
-          <a href='Resume.pdf' target="_blank" rel="noreferrer" class="text-[16px] transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
+          <a href='Resume.pdf' target="_blank" rel="noreferrer" class="text-[16px] transition ease-in-out underline text-violet-600 hover:text-violet-900 duration-100">
             resume
           </a>
         </div>
@@ -44,27 +39,23 @@ export default function Home() {
             <ul>
               <li class="mb-1">
                 projects <br></br>[
-                <a href='https://github.com/LeonDong02' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
+                <a href='https://github.com/LeonDong02' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-900 duration-100">
                   github
                 </a>
                 /
-                <a href='https://devpost.com/LeonDong' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
+                <a href='https://devpost.com/LeonDong' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-900 duration-100">
                   devpost
                 </a>
                 ]
               </li>
               <li class="mb-1">
-                valorant <br></br>[
-                <a href='https://www.youtube.com/watch?v=zf37WxQCW68' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
-                  montage
+                competitive programming <br></br>[
+                <a href='https://codeforces.com/profile/p1geon' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-900 duration-100">
+                  cf
                 </a>
                 /
-                <a href='https://www.youtube.com/@wetpeeker' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
-                  channel
-                </a>
-                /
-                <a href='https://tracker.gg/valorant/profile/riot/mc2van%23na1/overview' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
-                  tracker
+                <a href='https://dmoj.ca/user/p1geon' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-900 duration-100">
+                  dmoj
                 </a>
                 ]
               </li>
@@ -74,23 +65,27 @@ export default function Home() {
             <ul>
               <li class="mb-1">
                 music <br></br>[
-                <a href='https://open.spotify.com/user/22offyqbuyz7qehcrv7sssa4y?si=273a075fb0a049b3' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
+                <a href='https://open.spotify.com/user/22offyqbuyz7qehcrv7sssa4y?si=273a075fb0a049b3' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-900 duration-100">
                   spotify
                 </a>
                 /
-                <a href='https://www.last.fm/user/p1geon_' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
+                <a href='https://www.last.fm/user/p1geon_' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-900 duration-100">
                   lastfm
                 </a>
                 ]
               </li>
               <li class="mb-1">
-                competitive programming <br></br>[
-                <a href='https://codeforces.com/profile/p1geon' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
-                  cf
+                valorant <br></br>[
+                <a href='https://www.youtube.com/watch?v=zf37WxQCW68' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-900 duration-100">
+                  montage
                 </a>
                 /
-                <a href='https://dmoj.ca/user/p1geon' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
-                  dmoj
+                <a href='https://www.youtube.com/@wetpeeker' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-900 duration-100">
+                  channel
+                </a>
+                /
+                <a href='https://tracker.gg/valorant/profile/riot/mc2van%23na1/overview' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-900 duration-100">
+                  tracker
                 </a>
                 ]
               </li>
@@ -102,15 +97,15 @@ export default function Home() {
           <ul>
             <li>
                 contact <br></br>[
-                <a href='https://www.linkedin.com/in/leondong02/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
+                <a href='https://www.linkedin.com/in/leondong02/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-900 duration-100">
                   linkedin
                 </a>
                 /
-                <a href='https://twitter.com/wetpeeker' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
+                <a href='https://twitter.com/wetpeeker' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-900 duration-100">
                   twitter
                 </a>
                 /
-                <a href='mailto:yiming.dong@uwaterloo.ca' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
+                <a href='mailto:yiming.dong@uwaterloo.ca' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-900 duration-100">
                   email
                 </a>
                 ]
