@@ -28,12 +28,12 @@ export default function Others() {
                         </li>
                         <li class="mb-1">
                             security/cryptography <br></br>[
-                            <a href='https://picoctf.org/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
-                            picoctf
-                            </a>
-                            /
                             <a href='https://ctf.issessions.ca/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
                             issessions
+                            </a>
+                            /
+                            <a href='https://picoctf.org/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
+                            picoctf
                             </a>
                             /
                             <a href='https://uwflow.com/course/co487' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
