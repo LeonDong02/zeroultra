@@ -39,11 +39,11 @@ export default function Home() {
         <div class="text-xl font-bold">
           other cool stuff
         </div>
-        <div class="flex flex-col md:flex-row mb-1 md:mb-0">
+        <div class="flex flex-col md:flex-row">
           <div class="basis-1/2">
             <ul>
-              <li>
-                projects [
+              <li class="mb-1">
+                projects <br></br>[
                 <a href='https://github.com/LeonDong02' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
                   github
                 </a>
@@ -53,8 +53,8 @@ export default function Home() {
                 </a>
                 ]
               </li>
-              <li>
-                valorant [
+              <li class="mb-1">
+                valorant <br></br>[
                 <a href='https://www.youtube.com/watch?v=zf37WxQCW68' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
                   montage
                 </a>
@@ -72,8 +72,8 @@ export default function Home() {
           </div>
           <div class="basis-1/2">
             <ul>
-              <li>
-                music [
+              <li class="mb-1">
+                music <br></br>[
                 <a href='https://open.spotify.com/user/22offyqbuyz7qehcrv7sssa4y?si=273a075fb0a049b3' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
                   spotify
                 </a>
@@ -83,8 +83,8 @@ export default function Home() {
                 </a>
                 ]
               </li>
-              <li>
-                competitive programming [
+              <li class="mb-1">
+                competitive programming <br></br>[
                 <a href='https://codeforces.com/profile/p1geon' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
                   cf
                 </a>
@@ -101,7 +101,7 @@ export default function Home() {
         <div class="mb-2.5">
           <ul>
             <li>
-                contact [
+                contact <br></br>[
                 <a href='https://www.linkedin.com/in/leondong02/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
                   linkedin
                 </a>
