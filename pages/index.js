@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 export default function Home() {
   return (
-    <div class="font-mono text-[14px] leading-[1.15] w-[90vw] md:w-full mx-auto">
+    <div class="font-mono text-[13px] leading-[1.15] w-[90vw] md:w-full mx-auto">
       <Head>
         <title>Zero Ultra</title>
       </Head>
@@ -23,7 +23,7 @@ export default function Home() {
             i&apos;m an incoming mobile eng intern @ <a href='https://www.linkedin.com' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-900 duration-100">linkedin</a> and previously, i was a mobile eng intern @ <a href='https://www.ecobee.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-900 duration-100">ecobee</a>, <a href='https://steeresg.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-900 duration-100">facedrive</a>.
           </div>
           <br></br>
-          <a href='Resume.pdf' target="_blank" rel="noreferrer" class="text-[16px] transition ease-in-out underline text-violet-600 hover:text-violet-900 duration-100">
+          <a href='Resume.pdf' target="_blank" rel="noreferrer" class="text-[15px] transition ease-in-out underline text-violet-600 hover:text-violet-900 duration-100">
             resume
           </a>
         </div>
