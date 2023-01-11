@@ -28,7 +28,7 @@ export default function Home() {
             <a href='https://steeresg.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">facedrive</a>.
           </div>
           <br></br>
-          <a href='Resume.pdf' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
+          <a href='Resume.pdf' target="_blank" rel="noreferrer" class="text-[16px] transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
             resume
           </a>
         </div>
