@@ -85,7 +85,7 @@ export default function NowPlaying() {
                         <p class="truncate">
                             Now playing:
                             <br></br>
-                            <a href={data.songUrl} target="_blank" rel="noopener noreferrer" class="transition ease-in-out underline hover:text-stone-400 duration-100" >
+                            <a href={data.songUrl} target="_blank" rel="noopener noreferrer" class="transition ease-in-out underline text-violet-800 hover:text-violet-900 duration-100" >
                                 {data.title + " - " + data?.artist}
                             </a>
                         </p>
@@ -95,7 +95,7 @@ export default function NowPlaying() {
                         <p class="truncate">
                             Now playing:
                             <br></br>
-                            <a href="https://open.spotify.com/user/22offyqbuyz7qehcrv7sssa4y?si=6a8ebdaecab045e3" target="_blank" rel="noopener noreferrer" class="transition ease-in-out underline hover:text-stone-400 duration-100">
+                            <a href="https://open.spotify.com/user/22offyqbuyz7qehcrv7sssa4y?si=6a8ebdaecab045e3" target="_blank" rel="noopener noreferrer" class="transition ease-in-out underline text-violet-800 hover:text-violet-900 duration-100">
                                 Not currently listening
                             </a>
                         </p>
