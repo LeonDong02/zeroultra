@@ -19,7 +19,7 @@ export default function Home() {
           </div>
           <br></br>
           <div>
-            Previously, I was a mobile eng intern @ Ecobee, Facedrive and I&apos;m an incoming mobile eng intern @ LinkedIn.
+            I&apos;m an incoming mobile eng intern @ LinkedIn and previously, I was a mobile eng intern @ Ecobee, Facedrive.
           </div>
           <br></br>
           <a href='Resume.pdf' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-800 hover:text-violet-900 duration-100">
