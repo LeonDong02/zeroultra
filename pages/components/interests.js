@@ -20,6 +20,10 @@ export default function Others() {
                             <a href='https://uwflow.com/course/cs486' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
                             cs486
                             </a>
+                            /
+                            <a href='https://uwflow.com/course/cs484' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
+                            cs484
+                            </a>
                             ]
                         </li>
                         <li class="mb-1">
