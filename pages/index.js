@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
         <title>Zero Ultra</title>
       </Head>
-      <div class="flex flex-col md:flex-row h-100 md:h-48 mt-16 md:mt-28 mb-4">
+      <div class="flex flex-col md:flex-row h-100 md:h-48 mt-16 md:mt-28 mb-2.5">
         <div class="basis-full md:basis-1/4 px-12 md:px-0">
           <img src={'pfp.png'} alt="Profile Picture" />
         </div>
