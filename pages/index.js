@@ -24,7 +24,7 @@ export default function Home() {
 
       var elem = document.elementFromPoint(x, y);
       
-      if (diffX < delta && diffY < delta && elem.nodeName != "A" && screen.width >= 768) {
+      if (diffX < delta && diffY < delta && elem.nodeName != "A" && e.button === 0 && screen.width >= 768) {
         var audio = new Audio('explosion.mp3?' + Math.random());
 
         var img = document.createElement('img');
