@@ -1,0 +1,23 @@
+client id
+6ee75bf8283942e6a11b5c11a3ea4818
+
+client secret
+b1bed618f5544fd4b51d1186d00e0bff
+
+decode url
+https://accounts.spotify.com/authorize?client_id=6ee75bf8283942e6a11b5c11a3ea4818&response_type=code&redirect_uri=http://localhost:3000/callback&scope=user-read-currently-playing
+
+encode url
+https%3A%2F%2Faccounts.spotify.com%2Fauthorize%3Fclient_id%3D6ee75bf8283942e6a11b5c11a3ea4818%26response_type%3Dcode%26redirect_uri%3Dhttp%3A%2F%2Flocalhost%3A3000%2Fcallback%26scope%3Duser-read-currently-playing
+
+code
+AQClbdqSlc147I79Vruu-zfQef3vV2JX6NkBJtq0ZPlskGQ020sXDmdep2JycIfvo14ejrCvolThmaAvj2lct1nXq77kBXav2C6HolrdL67vGIKQCbzenaFzIjUtBYRiAb8c_6VSyvBILpZ8kVpdz1fYdOQfrVT569-ugBvsQ-IsClfVORFZrdT_4qxgmnUt2uLBK1L1UTUpgwVkPEak
+
+curl -H "Authorization: Basic NmVlNzViZjgyODM5NDJlNmExMWI1YzExYTNlYTQ4MTg6YjFiZWQ2MThmNTU0NGZkNGI1MWQxMTg2ZDAwZTBiZmY=" -d grant_type=authorization_code -d code=AQD9m_rqoCxy7mLv6WaLXfWEgSU96nvES4vVfvCGaMT5pMLVOuYFSA8cyaQ2md0VuOuI5C-RbHU1XRRzZLFBDDwJZEcoG9Lr2BSXXl61cN2LVPadyu-FO-kRvbHJi5DX7aKupPVQzRXqFFko3_iiLmHxiBpvYVr_x-OSX4VUQfb_ZgGEscvs0tqPtGT3LRiDRwULpK6YY6qaXMXfCfjk -d redirect_uri=http%3A%2F%2Flocalhost:3000/callback https://accounts.spotify.com/api/token
+
+
+
+{"access_token":"BQA76z1MQ_vjOX7vo_Wwz9w2krYTL2UnMMjDJcWMx_otfnlua-pg3HjkOTPNsHtUwI-yYnF3dLbxxU2NGztAVcZjrY59N08Ea__GxsvBPEWOie-dmcsbdiAUUBrFRZb0CShOh8RpfAFUUnry3Aa5Q2Bwnc42YYCQW4skvOHzigmo9BjIaDxk010YoqbtQF37mRWnexCMdhI",
+"token_type":"Bearer","expires_in":3600,
+"refresh_token":"AQAXXVjoLNa5iK2PAV7xulKSreZW1UbJxAjFt5x5Ju0sgHCke6JDY8GQh1f8Dq5xSKJNLQ3N2_Ci1yZNu52WK8cK1fQfwka-bh2ba-CdgOJd52dOBRV4XH_tLUXYRu-zHec",
+"scope":"user-read-currently-playing"}
