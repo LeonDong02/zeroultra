@@ -2,8 +2,51 @@ import Others from './components/others.js'
 import Interests from './components/interests.js'
 import Spotify from './components/spotify'
 import Head from 'next/head'
+import React, { useEffect } from 'react';
 
 export default function Home() {
+
+  useEffect(() => {
+    const delta = 6;
+    let startX;
+    let startY;
+
+    document.addEventListener("mousedown", (e) => {
+      startX = e.clientX;
+      startY = e.clientY;
+    });
+
+    document.addEventListener("mouseup", (e) => {
+      let x = e.pageX;
+      let y = e.pageY;
+      const diffX = Math.abs(x - startX);
+      const diffY = Math.abs(y - startY);
+      
+      if (diffX < delta && diffY < delta) {
+        var audio = new Audio('explosion.mp3?' + Math.random());
+
+        var img = document.createElement('img');
+        img.className = "gif-player";
+        img.style.pointerEvents = "none";
+        img.src = 'explosion.gif?' + Math.random();
+
+        var div = document.createElement('div');
+        div.appendChild(img);
+        div.style.left = (x - 25) + "px";
+        div.style.top = (y - 40) + "px";
+        div.style.position = "absolute";
+        div.style.pointerEvents = "none";
+        
+        document.body.appendChild(div);
+        audio.play();
+
+        setTimeout(() => {
+          div.remove();
+        }, 1500);
+      }
+    });
+  }, []);
+
   return (
     <div class="font-mono text-[13px] leading-[1.15] w-[90vw] md:w-full mx-auto">
       <Head>

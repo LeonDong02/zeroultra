@@ -17,3 +17,8 @@ body {
   color: white;
   background: rgb(9, 6, 18);
 }
+
+.gif-player::selection {
+  background-color: transparent;
+  color: #000;
+}
