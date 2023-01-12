@@ -50,7 +50,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div class="font-mono text-[13px] leading-[1.15] w-[90vw] md:w-full mx-auto">
+    <div class="font-mono text-[13px] leading-[1.15] w-[100vw] md:w-full mx-auto">
       <Head>
         <title>Zero Ultra</title>
       </Head>
