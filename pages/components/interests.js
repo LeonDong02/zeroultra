@@ -14,7 +14,7 @@ export default function Others() {
                             </a>
                             /
                             <a href='https://github.com/LeonDong02/pennappsxx' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
-                            moneymachine
+                            $machine
                             </a>
                             /
                             <a href='https://uwflow.com/course/cs486' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
