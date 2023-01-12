@@ -21,8 +21,10 @@ export default function Home() {
       let y = e.pageY;
       const diffX = Math.abs(x - startX);
       const diffY = Math.abs(y - startY);
+
+      var elem = document.elementFromPoint(x, y);
       
-      if (diffX < delta && diffY < delta) {
+      if (diffX < delta && diffY < delta && elem.nodeName != "A" && screen.width >= 768) {
         var audio = new Audio('explosion.mp3?' + Math.random());
 
         var img = document.createElement('img');
