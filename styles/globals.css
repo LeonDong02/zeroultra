@@ -19,7 +19,7 @@ body {
 }
 
 .overflowxscroll {
-  overflow-x: scroll;
+  overflow: auto;
 }
 
 .gif-player::selection {
