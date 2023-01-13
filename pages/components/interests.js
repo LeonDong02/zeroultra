@@ -75,7 +75,7 @@ export default function Others() {
                             ]
                         </li>
                         <li class="mb-1">
-                            others <br></br>[<div class="text-violet-500 inline">ux/backend/infra</div>]
+                            others <br></br>[<div class="text-violet-500 inline">ux</div>/<div class="text-violet-500 inline">backend</div>/<div class="text-violet-500 inline">infra</div>]
                         </li>
                     </ul>
                 </div>
