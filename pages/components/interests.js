@@ -4,7 +4,7 @@ export default function Others() {
             <div class="text-xl font-bold">
                 interests
             </div>
-            <div class="flex flex-col md:flex-row mb-1 overflowxscroll">
+            <div class="flex flex-col md:flex-row mb-2.5 overflowxscroll">
                 <div class="basis-1/2">
                     <ul>
                         <li class="mb-1">
@@ -45,10 +45,6 @@ export default function Others() {
                             </a>
                             ]
                         </li>
-                    </ul>
-                </div>
-                <div class="basis-1/2">
-                    <ul>
                         <li class="mb-1">
                             web3 <br></br>[
                             <a href='https://github.com/LeonDong02/habipets' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
@@ -60,6 +56,17 @@ export default function Others() {
                             </a>
                             ]
                         </li>
+                    </ul>
+                </div>
+                <div class="basis-1/2">
+                    <ul>
+                        <li class="mb-1">
+                            bioinformatics <br></br>[
+                            <a href='https://uwflow.com/course/cs482' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
+                            cs482
+                            </a>
+                            ]
+                        </li>
                         <li class="mb-1">
                             quantum computing <br></br>[
                             <a href='https://uwflow.com/course/co481' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-700 hover:text-violet-900 duration-100">
@@ -67,11 +74,11 @@ export default function Others() {
                             </a>
                             ]
                         </li>
+                        <li class="mb-1">
+                            others <br></br>[ux/backend/infra]
+                        </li>
                     </ul>
                 </div>
-            </div>
-            <div class="mb-2.5">
-                additionally: ux, backend, infra
             </div>
         </div>
     )
