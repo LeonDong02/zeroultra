@@ -4,7 +4,7 @@ export default function Others() {
             <div class="text-xl font-bold">
                 interests
             </div>
-            <div class="flex flex-col md:flex-row mb-2.5 overflowxscroll">
+            <div class="flex flex-col md:flex-row mb-1 overflowxscroll">
                 <div class="basis-1/2">
                     <ul>
                         <li class="mb-1">
@@ -69,6 +69,9 @@ export default function Others() {
                         </li>
                     </ul>
                 </div>
+            </div>
+            <div class="mb-2.5">
+                additionally: ux, backend, infra
             </div>
         </div>
     )
