@@ -70,7 +70,7 @@ export default function Home() {
             i&apos;m an incoming mobile eng intern @ <a href='https://www.linkedin.com' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-900 duration-100">linkedin</a> and previously, i was a mobile eng intern @ <a href='https://www.ecobee.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-900 duration-100">ecobee</a>, <a href='https://steeresg.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-900 duration-100">facedrive</a>.
           </div>
           <br></br>
-          <a href='https://drive.google.com/file/d/1BE0gdHw51IQRto9X_kuyFAD5FI5yxC0J/view?usp=sharing' target="_blank" rel="noreferrer" class="text-[15px] transition ease-in-out underline text-violet-600 hover:text-violet-900 duration-100">
+          <a href='Resume.pdf' target="_blank" rel="noreferrer" class="text-[15px] transition ease-in-out underline text-violet-600 hover:text-violet-900 duration-100">
             resume
           </a>
         </div>
