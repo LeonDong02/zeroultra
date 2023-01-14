@@ -36,7 +36,7 @@ export default function Home() {
         var div = document.createElement('div');
         div.appendChild(img);
         div.style.left = (x - 25) + "px";
-        div.style.top = (y - 40) + "px";
+        div.style.top = (y - 36) + "px";
         div.style.position = "absolute";
         div.style.pointerEvents = "none";
         
