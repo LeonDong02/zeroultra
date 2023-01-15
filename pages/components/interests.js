@@ -28,7 +28,7 @@ export default function Others() {
                         </li>
                         <li class="mb-1">
                             security/cryptography <br></br>[
-                            <a href='https://ctf.issessions.ca/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">
+                            <a href='https://github.com/LeonDong02/issessions-2023' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">
                             issessions
                             </a>
                             /
