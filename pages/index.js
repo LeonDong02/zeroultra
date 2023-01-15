@@ -80,7 +80,7 @@ export default function Home() {
 
         <Others />
 
-        <p class="text-clip overflow-hidden mb-2.5">
+        <p class="text-clip overflow-hidden mb-2.5 seperator">
         ...........................................................................................................................................................................
         </p>
 

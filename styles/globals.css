@@ -27,3 +27,6 @@ body {
   color: #000;
 }
 
+.seperator::selection {
+  background-color: transparent;
+}
