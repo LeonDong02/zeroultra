@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/analytics": "^0.1.8",
+    "analytics": "github:vercel/analytics",
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.5",
     "motion": "^10.15.3",

@@ -53,6 +53,7 @@ export default function Home() {
   return (
     <div class="font-mono text-[13px] leading-[1.15] w-[100vw] md:w-full mx-auto">
       <Head>
+        <Analytics />
         <title>Zero Ultra</title>
       </Head>
       <div class="flex flex-col md:flex-row h-100 md:h-48 mt-16 md:mt-28 mb-2.5">
