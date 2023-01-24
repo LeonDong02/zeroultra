@@ -256,11 +256,11 @@ export default function Home() {
   return (
     <div class="font-mono text-[13px] leading-[1.15] w-[100vw] md:w-full mx-auto">
       <Head>
-        <Script>NekoType="fancy"</Script>
-        <h1 id='nl'><Script src="https://webneko.net/n20171213.js"></Script><a href="https://webneko.net">Neko</a></h1>
         <title>Zero Ultra</title>
       </Head>
       <div class="flex flex-col md:flex-row h-100 md:h-48 mt-16 md:mt-28 mb-2.5">
+        <Script>NekoType="fancy"</Script>
+        <h1 id='nl'><Script src="https://webneko.net/n20171213.js"></Script><a href="https://webneko.net">Neko</a></h1>
         <div class="basis-full md:basis-1/4 px-12 md:px-0">
           <img src={'pfp.png'} alt="Profile Picture" />
         </div>
