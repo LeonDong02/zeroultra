@@ -3,7 +3,7 @@ import Interests from './components/interests.js'
 import Spotify from './components/spotify'
 import Head from 'next/head'
 import React, { useEffect } from 'react';
-import '@vercel/analytics'
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Home() {
 
