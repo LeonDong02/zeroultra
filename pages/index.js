@@ -2,6 +2,7 @@ import Others from './components/others.js'
 import Interests from './components/interests.js'
 import Spotify from './components/spotify'
 import Head from 'next/head'
+import Script from 'next/script'
 import React, { useEffect } from 'react';
 
 export default function Home() {
@@ -255,8 +256,8 @@ export default function Home() {
   return (
     <div class="font-mono text-[13px] leading-[1.15] w-[100vw] md:w-full mx-auto">
       <Head>
-
-        <h1 id='nl'><script src="https://webneko.net/n20171213.js"></script><a href="https://webneko.net">Neko</a></h1>
+        <Script>NekoType="fancy"</Script>
+        <h1 id='nl'><Script src="https://webneko.net/n20171213.js"></Script><a href="https://webneko.net">Neko</a></h1>
         <title>Zero Ultra</title>
       </Head>
       <div class="flex flex-col md:flex-row h-100 md:h-48 mt-16 md:mt-28 mb-2.5">
