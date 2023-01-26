@@ -62,8 +62,8 @@ export default function Home() {
       <div class="flex flex-col md:flex-row h-100 md:h-48 mt-16 md:mt-28 mb-2.5">
         {/* <script src='./coolstuff/sparkle.js' async></script>
         <script src="https://webneko.net/n20171213.js" async></script> */}
-        <div class="basis-full md:basis-1/4 px-12 md:px-0">
-          <img src={'pfp.png'} alt="Profile Picture" />
+        <div class="basis-full md:basis-1/4">
+          <img src={'pfp.png'} alt="Profile Picture" class="px-12 md:px-0" />
         </div>
         <div class="basis-full md:basis-3/4 px-12 md:pl-8">
           <div class="text-3xl font-bold my-1.5 md:my-2.5">leon dong</div>
