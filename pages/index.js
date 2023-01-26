@@ -62,16 +62,16 @@ export default function Home() {
         <meta name="description" content="super cool computer science student B)"></meta>
 
         <meta property="og:type" content="website"></meta>
-        <meta property="og:url" content="https://zeroultra.vercel.app/"></meta>
+        <meta property="og:url" content="https://www.leondong.com/"></meta>
         <meta property="og:title" content="leon dong"></meta>
         <meta property="og:description" content="super cool computer science student B)"></meta>
-        <meta property="og:image" content=""></meta>
+        <meta property="og:image" content="https://www.leondong.com/pfp.jpg"></meta>
 
         <meta property="twitter:card" content="summary_large_image"></meta>
-        <meta property="twitter:url" content="https://zeroultra.vercel.app/"></meta>
+        <meta property="twitter:url" content="https://www.leondong.com/"></meta>
         <meta property="twitter:title" content="leon dong"></meta>
         <meta property="twitter:description" content="super cool computer science student B)"></meta>
-        <meta property="twitter:image" content=""></meta>
+        <meta property="twitter:image" content="https://www.leondong.com/pfp.jpg"></meta>
       </Head>
       <div class="flex flex-col md:flex-row h-100 md:h-48 mt-16 md:mt-28 mb-2.5">
         {/* <script src='./coolstuff/sparkle.js' async></script>
