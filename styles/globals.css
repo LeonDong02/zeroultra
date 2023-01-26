@@ -30,3 +30,14 @@ body {
 .seperator::selection {
   background-color: transparent;
 }
+
+.construction {
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+
+.construction-border {
+  border:2px solid white;
+  border-style: dashed;
+}

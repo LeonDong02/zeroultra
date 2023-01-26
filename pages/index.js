@@ -1,6 +1,7 @@
 import Others from './components/others.js'
 import Interests from './components/interests.js'
 import Spotify from './components/spotify'
+import Construction from './components/construction'
 import Head from 'next/head'
 import Script from 'next/script'
 import React, { useEffect } from 'react';
@@ -109,6 +110,7 @@ export default function Home() {
         <div>Website very WIP</div>
         <br></br>
         <div>Built with blood, sweat, and Monster™ Zero Ultra</div> */}
+        <Construction />
       </div>
     </div>
   )
