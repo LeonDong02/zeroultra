@@ -60,8 +60,8 @@ export default function Home() {
         <title>Zero Ultra</title>
       </Head>
       <div class="flex flex-col md:flex-row h-100 md:h-48 mt-16 md:mt-28 mb-2.5">
-        <script src='./coolstuff/sparkle.js' async></script>
-        <script src="https://webneko.net/n20171213.js" async></script>
+        {/* <script src='./coolstuff/sparkle.js' async></script>
+        <script src="https://webneko.net/n20171213.js" async></script> */}
         <div class="basis-full md:basis-1/4 px-12 md:px-0">
           <img src={'pfp.png'} alt="Profile Picture" />
         </div>
