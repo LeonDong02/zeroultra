@@ -40,7 +40,6 @@ export default function Home() {
 
         var div = document.createElement('div');
         div.appendChild(img);
-        div.className = "no-overflow";
         div.style.left = (x - 25) + "px";
         div.style.top = (y - 36) + "px";
         div.style.position = "absolute";

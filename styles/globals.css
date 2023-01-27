@@ -27,11 +27,6 @@ body {
   color: #000;
 }
 
-.no-overflow {
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-
 .seperator::selection {
   background-color: transparent;
 }
