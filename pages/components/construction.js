@@ -9,7 +9,9 @@ export default function Construction() {
             </div>
             <br class="seperator"></br>
             <div class="construction">
-                right-brain website
+                <a href='https://zeroultra.neocities.org/' target="_blank" rel="noreferrer" class="text-[15px] transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">
+                    right-brain website
+                </a>
             </div>
             <br class="seperator"></br>
         </div>
