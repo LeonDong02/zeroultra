@@ -16,8 +16,6 @@ body {
   color-scheme: dark;
   color: white;
   background: rgb(8, 5, 23);
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 .overflowxscroll {
@@ -27,6 +25,8 @@ body {
 .gif-player::selection {
   background-color: transparent;
   color: #000;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .seperator::selection {
