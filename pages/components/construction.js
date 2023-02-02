@@ -13,6 +13,9 @@ export default function Construction() {
                     right-brain website
                 </a>
             </div>
+            <div class="construction text-violet-500">
+                "starry night"
+            </div>
             <br class="seperator"></br>
         </div>
     )
