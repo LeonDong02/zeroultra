@@ -15,7 +15,7 @@ export default function Construction() {
             </div>
             <br class="seperator"></br>
             <div class="construction text-violet-500">
-                &ldquo;starry nigh&rdquo;
+                &ldquo;starry night&rdquo;
             </div>
             <br class="seperator"></br>
         </div>
