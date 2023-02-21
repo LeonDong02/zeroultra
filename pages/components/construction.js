@@ -7,7 +7,7 @@ export default function Construction() {
             <div class="center">
                 <a href="https://d3l-n3st.vercel.app/prev" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">&lt;&lt;</a>
                 &#47;&#47;
-                <a href="https://d3l-n3st.vercel.app/" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">d3l n3st webring</a>
+                <a href="https://d3l-n3st.vercel.app/" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">d3ln3st webring</a>
                 &#47;&#47;
                 <a href="https://d3l-n3st.vercel.app/next" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">&gt;&gt;</a>
             </div>
