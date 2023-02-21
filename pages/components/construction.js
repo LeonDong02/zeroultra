@@ -4,10 +4,12 @@ export default function Construction() {
             <br class="seperator"></br>
             <div class="center">under construction</div>
             <br class="seperator"></br>
-            <div class="center text-violet-500">
-                <div class="center">
-                    <a href="https://d3l-n3st.vercel.app/prev" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">&lt;&lt;</a>//<a href="https://d3l-n3st.vercel.app/" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">d3l n3st webring</a>//<a href="https://d3l-n3st.vercel.app/next" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">&gt;&gt;</a>
-                </div>
+            <div class="center">
+                <a href="https://d3l-n3st.vercel.app/prev" target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">&lt;&lt;</a>
+                //
+                <a href="https://d3l-n3st.vercel.app/" target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">d3l n3st webring</a>
+                //
+                <a href="https://d3l-n3st.vercel.app/next" target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">&gt;&gt;</a>
             </div>
             <br class="seperator"></br>
             <div class="center">
