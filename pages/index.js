@@ -10,50 +10,6 @@ export default function Home() {
 
   useEffect(() => {
 
-    function getStarIcon() {
-      const chance = Math.random();
-      const starDistribution = [
-        [0.05, '•'],
-        [0.2, '*'],
-        [1, '.']
-      ];
-      
-      return starDistribution.find(dist => chance < dist[0])[1];
-    }
-    
-    function getColor() {
-      const chance = Math.random();
-      const colorDistribution = [
-        [0.2, '#fce7a1'],
-        [0.4, '#f7c45e'],
-        [1, '#fdda68'],
-      ];
-      
-      return colorDistribution.find(dist => chance < dist[0])[1];
-    }
-    
-    function createStar() {
-      const star = document.createElement('p');
-      star.innerHTML = getStarIcon();
-      star.className += 'star';
-      star.style.top = `${getRandomInt(0, window.innerHeight - 20)}px`;
-      star.style.left = `${getRandomInt(0, window.innerWidth - 10)}px`;
-      star.style.color = getColor();
-      star.style['animation-delay'] = `${getRandomInt(0, 5)}s`;
-      star.style['animation-duration'] = `${getRandomInt(2, 4)}s`;
-      star.style.zIndex = -1;
-      document.body.appendChild(star);
-    }
-    
-    function getRandomInt(min, max) {
-      return Math.floor(Math.random() * (max - min)) + min;
-    }
-    
-    const starCount = 100;
-    for (let i = 0; i < starCount; i++) {
-      createStar();
-    }
-
     // MARK: EXPLOSION
 
     const delta = 6;
@@ -97,6 +53,79 @@ export default function Home() {
         }, 1500);
       }
     });
+
+    // MARK: STARS
+
+    function getStarIcon() {
+      const chance = Math.random();
+      const starDistribution = [
+        [0.05, '•'],
+        [0.2, '*'],
+        [1, '.']
+      ];
+      
+      return starDistribution.find(dist => chance < dist[0])[1];
+    }
+    
+    function getColor() {
+      const chance = Math.random();
+      const colorDistribution = [
+        [0.2, '#fce7a1'],
+        [0.4, '#f7c45e'],
+        [1, '#fdda68'],
+      ];
+      
+      return colorDistribution.find(dist => chance < dist[0])[1];
+    }
+    
+    function createStar() {
+      const star = document.createElement('p');
+      star.innerHTML = getStarIcon();
+      star.className += 'star';
+      star.style.top = `${getRandomInt(0, window.innerHeight - 20)}px`;
+      star.style.left = `${getRandomInt(0, window.innerWidth - 10)}px`;
+      star.style.color = getColor();
+      star.style['animation-delay'] = `${getRandomInt(0, 20)}s`;
+      star.style['animation-duration'] = `${(getRandomInt(0, 400) / 100) + 16}s`;
+      star.style.zIndex = -1;
+      document.body.appendChild(star);
+    }
+    
+    function getRandomInt(min, max) {
+      return Math.floor(Math.random() * (max - min)) + min;
+    }
+    
+    const starCount = 100;
+    for (let i = 0; i < starCount; i++) {
+      createStar();
+    }
+
+    // MARK: METEORS
+
+    function createMeteor() {
+      const meteor = document.createElement('div');
+      meteor.className += 'meteor';
+      meteor.style.top = `${getRandomInt(50, 250)}px`;
+      meteor.style.left = `${getRandomInt(15, 90)}%`;
+      meteor.style['animation-duration'] = `${(getRandomInt(0, 60) / 10) + 7.5}s`;
+      meteor.style.zIndex = -1;
+      document.body.appendChild(meteor);
+    }
+
+    function timeout(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async function renderMeteors () {
+      const meteorCount = 3;
+      for (let i = 0; i < meteorCount; i++) {
+        createMeteor();
+        await timeout(1000);
+      }
+    }
+
+    renderMeteors();
+
   }, []);
 
   return (

@@ -23,7 +23,7 @@ body {
 }
 
 .realbody {
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(3px);
 }
 
 .overflowxscroll {
@@ -53,17 +53,64 @@ body {
 .star {
   position: absolute;
   animation-name: twinkle;
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
   user-select: none; 
+  filter: blur(0.5px);
 }
 
 @keyframes twinkle {
-    from {
-      transform: scale(1);
+    0% {
+      opacity: 1;
     }
-    to {
-      transform: scale(0.3);
+    4% {
+      opacity: 0.1;
     }
+    8% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.meteor::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background: rgba(#fce7a1,.7);
+  box-shadow: 0 0 15px 3px #fce7a1;
+}
+
+.meteor {
+  position: absolute;
+  width: 300px;
+  height: 1px;
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255,255,255,0));
+  animation-name: meteor;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes meteor {
+  0% {
+    opacity: 1;
+    margin-top: -300px;
+    margin-right: -300px;
+  }
+  12% {
+    opacity: 0;
+  }
+  15% {
+    margin-top: 300px;
+    margin-left: -600px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
