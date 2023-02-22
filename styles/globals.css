@@ -28,6 +28,10 @@ body {
   backdrop-filter: blur(3px);
 }
 
+.fadein {
+  animation: fadeInAnimation ease 1s;
+}
+
 .overflowxscroll {
   overflow: auto;
 }
@@ -52,28 +56,31 @@ body {
   border-style: dashed;
 }
 
-.star {
+.star1 {
   position: absolute;
-  animation-name: twinkle;
+  animation-name: twinkle1;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   user-select: none; 
   filter: blur(0.5px);
 }
 
-@keyframes twinkle {
-    0% {
-      opacity: 1;
-    }
-    4% {
-      opacity: 0.1;
-    }
-    8% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-    }
+.star2 {
+  position: absolute;
+  animation-name: twinkle2;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  user-select: none; 
+  filter: blur(0.5px);
+}
+
+.star3 {
+  position: absolute;
+  animation-name: twinkle3;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  user-select: none; 
+  filter: blur(0.5px);
 }
 
 .meteor::before {
@@ -98,6 +105,73 @@ body {
   animation-iteration-count: infinite;
 }
 
+@keyframes twinkle1 {
+  0% {
+    transform: translate(0);
+    opacity: 1;
+  }
+  4% {
+    opacity: 0.1;
+  }
+  8% {
+    opacity: 1;
+  }
+  33% {
+    transform: translate(-5px, 5px);
+  }
+  66% {
+    transform: translate(5px, 0px);
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes twinkle2 {
+  0% {
+    transform: translate(0);
+    opacity: 1;
+  }
+  4% {
+    opacity: 0.1;
+  }
+  8% {
+    opacity: 1;
+  }
+  33% {
+    transform: translate(3px, 8px);
+  }
+  66% {
+    transform: translate(-2px, 6px);
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes twinkle3 {
+  0% {
+    transform: translate(0);
+    opacity: 1;
+  }
+  4% {
+    opacity: 0.1;
+  }
+  8% {
+    opacity: 1;
+  }
+  33% {
+    transform: translate(-5px, -2.5px);
+  }
+  66% {
+    transform: translate(-5px, -10px);
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
 @keyframes meteor {
   0% {
     opacity: 1;
@@ -114,5 +188,14 @@ body {
   }
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

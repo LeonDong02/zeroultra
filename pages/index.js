@@ -84,7 +84,13 @@ export default function Home() {
     function createStar() {
       const star = document.createElement('p');
       star.innerHTML = getStarIcon();
-      star.className += 'star';
+      if (star.innerHTML == ".") {
+        star.className += 'star1';
+      } else if (star.innerHTML == "*") {
+        star.className += 'star2';
+      } else {
+        star.className += 'star3';
+      }
       star.style.top = `${getRandomInt(0, window.innerHeight - 20)}px`;
       if (screen.width < 768) {
         star.style.top = `${getRandomInt(0, Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight ) - 20)}px`;
