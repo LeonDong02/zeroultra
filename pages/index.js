@@ -106,7 +106,7 @@ export default function Home() {
       const meteor = document.createElement('div');
       meteor.className += 'meteor';
       meteor.style.top = `${getRandomInt(50, 250)}px`;
-      meteor.style.left = `${getRandomInt(9, 39) + (i * 30)}%`;
+      meteor.style.left = `${getRandomInt(9, 19) + (getRandomInt(i, i + 1) * 10)}%`;
       meteor.style['animation-duration'] = `${(getRandomInt(0, 60) / 10) + 7.5}s`;
       meteor.style.zIndex = -1;
       document.body.appendChild(meteor);
@@ -124,13 +124,7 @@ export default function Home() {
       }
     }
 
-    async function anotherMeteors (c) {
-      renderMeteors(c);
-      await timeout(2000);
-      renderMeteors(c);
-      await timeout(2000);
-      renderMeteors(c);
-    }
+    renderMeteors(8);
 
   }, []);
 
