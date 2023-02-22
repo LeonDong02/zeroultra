@@ -124,8 +124,13 @@ export default function Home() {
       }
     }
 
-    renderMeteors(3);
-    renderMeteors(3);
+    async function anotherMeteors (c) {
+      renderMeteors(c);
+      await timeout(2000);
+      renderMeteors(c);
+      await timeout(2000);
+      renderMeteors(c);
+    }
 
   }, []);
 
