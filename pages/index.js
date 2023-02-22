@@ -10,6 +10,50 @@ export default function Home() {
 
   useEffect(() => {
 
+    function getStarIcon() {
+      const chance = Math.random();
+      const starDistribution = [
+        [0.05, '•'],
+        [0.2, '*'],
+        [1, '.']
+      ];
+      
+      return starDistribution.find(dist => chance < dist[0])[1];
+    }
+    
+    function getColor() {
+      const chance = Math.random();
+      const colorDistribution = [
+        [0.2, '#fce7a1'],
+        [0.4, '#f7c45e'],
+        [1, '#fdda68'],
+      ];
+      
+      return colorDistribution.find(dist => chance < dist[0])[1];
+    }
+    
+    function createStar() {
+      const star = document.createElement('p');
+      star.innerHTML = getStarIcon();
+      star.className += 'star';
+      star.style.top = `${getRandomInt(0, window.innerHeight - 20)}px`;
+      star.style.left = `${getRandomInt(0, window.innerWidth - 10)}px`;
+      star.style.color = getColor();
+      star.style['animation-delay'] = `${getRandomInt(0, 5)}s`;
+      star.style['animation-duration'] = `${getRandomInt(2, 4)}s`;
+      star.style.zIndex = -1;
+      document.body.appendChild(star);
+    }
+    
+    function getRandomInt(min, max) {
+      return Math.floor(Math.random() * (max - min)) + min;
+    }
+    
+    const starCount = 100;
+    for (let i = 0; i < starCount; i++) {
+      createStar();
+    }
+
     // MARK: EXPLOSION
 
     const delta = 6;
@@ -74,43 +118,45 @@ export default function Home() {
         <meta property="twitter:description" content="super cool computer science student B)"></meta>
         <meta property="twitter:image" content="https://www.leondong.com/pfp.jpg"></meta>
       </Head>
-      <div class="flex flex-col md:flex-row h-100 md:h-48 mt-16 md:mt-28 mb-2.5">
-        {/* <script src='./coolstuff/sparkle.js' async></script>
-        <script src="https://webneko.net/n20171213.js" async></script> */}
-        <div class="basis-full md:basis-1/4">
-          <img src={'pfp.jpg'} alt="Profile Picture" class="px-12 md:px-0" />
-        </div>
-        <div class="basis-full md:basis-3/4 px-12 md:pl-8">
-          <div class="text-3xl font-bold my-1.5 md:my-2.5">leon dong</div>
-          <div>
-            i&apos;m a 3rd year computer science student with a minor in combinatorics and optimization @&nbsp;
-            <a href='https://uwaterloo.ca/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">uwaterloo</a>.
+      <div class="realbody">
+        <div class="flex flex-col md:flex-row h-100 md:h-48 mt-16 md:mt-28 mb-2.5">
+          {/* <script src='./coolstuff/sparkle.js' async></script>
+          <script src="https://webneko.net/n20171213.js" async></script> */}
+          <div class="basis-full md:basis-1/4">
+            <img src={'pfp.jpg'} alt="Profile Picture" class="px-12 md:px-0" />
           </div>
-          <br></br>
-          <div>
-            i&apos;m an incoming mobile eng intern @ <a href='https://www.linkedin.com' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">linkedin</a> and previously, i was a mobile eng intern @ <a href='https://www.ecobee.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">ecobee</a>, <a href='https://steeresg.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">facedrive</a>.
+          <div class="basis-full md:basis-3/4 px-12 md:pl-8">
+            <div class="text-3xl font-bold my-1.5 md:my-2.5">leon dong</div>
+            <div>
+              i&apos;m a 3rd year computer science student with a minor in combinatorics and optimization @&nbsp;
+              <a href='https://uwaterloo.ca/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">uwaterloo</a>
+            </div>
+            <br></br>
+            <div>
+              i&apos;m an incoming mobile eng intern @ <a href='https://www.linkedin.com' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">linkedin</a> and previously, i was a mobile eng intern @ <a href='https://www.ecobee.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">ecobee</a>, <a href='https://steeresg.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">facedrive</a>
+            </div>
+            <br></br>
+            <a href='Resume.pdf' target="_blank" rel="noreferrer" class="text-[15px] transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">
+              resume
+            </a>
           </div>
-          <br></br>
-          <a href='Resume.pdf' target="_blank" rel="noreferrer" class="text-[15px] transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">
-            resume
-          </a>
         </div>
-      </div>
-      <div class="flex flex-col px-12 md:px-0 py-4 md:py-0">
-        <Interests />
+        <div class="flex flex-col px-12 md:px-0 py-4 md:py-0">
+          <Interests />
 
-        <Others />
+          <Others />
 
-        <p class="text-clip overflow-hidden mb-2.5 seperator">
-        ...........................................................................................................................................................................
-        </p>
+          <p class="text-clip overflow-hidden mb-2.5 seperator">
+          ...........................................................................................................................................................................
+          </p>
 
-        <Spotify />
-        {/* <br></br>
-        <div>Website very WIP</div>
-        <br></br>
-        <div>Built with blood, sweat, and Monster™ Zero Ultra</div> */}
-        <Construction />
+          <Spotify />
+          {/* <br></br>
+          <div>Website very WIP</div>
+          <br></br>
+          <div>Built with blood, sweat, and Monster™ Zero Ultra</div> */}
+          <Construction />
+        </div>
       </div>
     </div>
   )
