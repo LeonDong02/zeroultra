@@ -102,11 +102,13 @@ export default function Home() {
 
     // MARK: METEORS
 
+    let permutation = [4,2,7,1,0,3,6,5];
+
     function createMeteor(i) {
       const meteor = document.createElement('div');
       meteor.className += 'meteor';
       meteor.style.top = `${getRandomInt(50, 250)}px`;
-      meteor.style.left = `${getRandomInt(9, 19) + (getRandomInt(i, i + 1) * 10)}%`;
+      meteor.style.left = `${getRandomInt(9, 19) + (getRandomInt(permutation[i], permutation[i] + 1) * 10)}%`;
       meteor.style['animation-duration'] = `${(getRandomInt(0, 60) / 10) + 7.5}s`;
       meteor.style.zIndex = -1;
       document.body.appendChild(meteor);
@@ -120,7 +122,7 @@ export default function Home() {
       const meteorCount = c;
       for (let i = 0; i < meteorCount; i++) {
         createMeteor(i);
-        await timeout(1000);
+        await timeout(getRandomInt(0, 1000) + getRandomInt(0, 1000));
       }
     }
 
