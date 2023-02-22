@@ -10,6 +10,9 @@ export default function Home() {
 
   useEffect(() => {
 
+    var body = document.body,
+    html = document.documentElement;
+
     // MARK: EXPLOSION
 
     const delta = 6;
@@ -83,6 +86,9 @@ export default function Home() {
       star.innerHTML = getStarIcon();
       star.className += 'star';
       star.style.top = `${getRandomInt(0, window.innerHeight - 20)}px`;
+      if (screen.width < 768) {
+        star.style.top = `${getRandomInt(0, Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight ) - 20)}px`;
+      }
       star.style.left = `${getRandomInt(0, window.innerWidth - 10)}px`;
       star.style.color = getColor();
       star.style['animation-delay'] = `${getRandomInt(0, 20)}s`;
