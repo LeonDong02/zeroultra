@@ -22,7 +22,7 @@ body {
   color: white;
 }
 
-.realbody {
+.blurryback {
   backdrop-filter: blur(3px);
 }
 

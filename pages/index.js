@@ -156,7 +156,7 @@ export default function Home() {
           <div class="basis-full md:basis-1/4">
             <img src={'pfp.jpg'} alt="Profile Picture" class="px-12 md:px-0" />
           </div>
-          <div class="basis-full md:basis-3/4 px-12 md:pl-8">
+          <div class="basis-full md:basis-3/4 px-12 md:pl-8 blurryback">
             <div class="text-3xl font-bold my-1.5 md:my-2.5">leon dong</div>
             <div>
               i&apos;m a 3rd year computer science student with a minor in combinatorics and optimization @&nbsp;
