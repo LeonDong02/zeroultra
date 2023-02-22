@@ -126,7 +126,9 @@ export default function Home() {
       }
     }
 
-    renderMeteors(8);
+    if (screen.width >= 768) {
+      renderMeteors(8);
+    }
 
   }, []);
 
