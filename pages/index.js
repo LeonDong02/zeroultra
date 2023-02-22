@@ -95,7 +95,7 @@ export default function Home() {
       return Math.floor(Math.random() * (max - min)) + min;
     }
     
-    const starCount = 200;
+    const starCount = 175;
     for (let i = 0; i < starCount; i++) {
       createStar();
     }
