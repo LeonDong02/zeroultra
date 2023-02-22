@@ -7,7 +7,7 @@
     display: block;
     width: 748px;
     margin: auto auto 1em;
-    padding: 0 10px;
+    margin-top: 92px;
   }
 }
 
@@ -25,7 +25,11 @@ body {
 }
 
 .blurryback {
-  backdrop-filter: blur(3px);
+  background: rgb(8, 5, 23, 0.01);
+}
+
+.highlight {
+  background-color: rgb(8, 5, 23);
 }
 
 .fadein {
@@ -57,30 +61,36 @@ body {
 }
 
 .star1 {
+  font-size: 25px;
   position: absolute;
   animation-name: twinkle1;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   user-select: none; 
   filter: blur(0.5px);
+  z-index: -1;
 }
 
 .star2 {
+  font-size: 12px;
   position: absolute;
   animation-name: twinkle2;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   user-select: none; 
   filter: blur(0.5px);
+  z-index: -1;
 }
 
 .star3 {
+  font-size: 15px;
   position: absolute;
   animation-name: twinkle3;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   user-select: none; 
   filter: blur(0.5px);
+  z-index: -1;
 }
 
 .meteor::before {

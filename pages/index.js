@@ -62,9 +62,9 @@ export default function Home() {
     function getStarIcon() {
       const chance = Math.random();
       const starDistribution = [
-        [0.05, '•'],
-        [0.2, '*'],
-        [1, '.']
+        [0.05, '✦'],
+        [0.2, '✷'],
+        [1, '⋆']
       ];
       
       return starDistribution.find(dist => chance < dist[0])[1];
@@ -84,9 +84,9 @@ export default function Home() {
     function createStar() {
       const star = document.createElement('p');
       star.innerHTML = getStarIcon();
-      if (star.innerHTML == ".") {
+      if (star.innerHTML == "⋆") {
         star.className += 'star1';
-      } else if (star.innerHTML == "*") {
+      } else if (star.innerHTML == "✷") {
         star.className += 'star2';
       } else {
         star.className += 'star3';
@@ -107,9 +107,9 @@ export default function Home() {
       return Math.floor(Math.random() * (max - min)) + min;
     }
     
-    let starCount = 175;
+    let starCount = 100;
     if (screen.width >= 768) {
-      starCount = 225;
+      starCount = 130;
     }
     for (let i = 0; i < starCount; i++) {
       createStar();
@@ -166,27 +166,33 @@ export default function Home() {
         <meta property="twitter:description" content="super cool computer science student B)"></meta>
         <meta property="twitter:image" content="https://www.leondong.com/pfp.jpg"></meta>
       </Head>
-      <div class="realbody">
-        <div class="flex flex-col md:flex-row h-100 md:h-48 mt-16 md:mt-28 mb-2.5">
+      <div class="realbody blurryback">
+        <div class="flex flex-col md:flex-row h-100 md:h-48 mt-12 md:mt-0 mb-2.5">
           {/* <script src='./coolstuff/sparkle.js' async></script>
           <script src="https://webneko.net/n20171213.js" async></script> */}
           <div class="basis-full md:basis-1/4">
             <img src={'pfp.jpg'} alt="Profile Picture" class="px-12 md:px-0" />
           </div>
-          <div class="basis-full md:basis-3/4 px-12 md:pl-8 blurryback">
-            <div class="text-3xl font-bold my-1.5 md:my-2.5">leon dong</div>
+          <div class="basis-full md:basis-3/4 px-12 md:pl-8">
+            <div class="text-3xl font-bold my-1.5 md:my-2.5"><span class="highlight">leon dong</span></div>
             <div>
-              i&apos;m a 3rd year computer science student with a minor in combinatorics and optimization @&nbsp;
-              <a href='https://uwaterloo.ca/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">uwaterloo</a>
+              <span class="highlight">
+                i&apos;m a 3rd year computer science student with a minor in combinatorics and optimization @&nbsp;
+                <a href='https://uwaterloo.ca/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">uwaterloo</a>
+              </span>
             </div>
             <br></br>
             <div>
-              incoming mobile eng intern @ <a href='https://www.linkedin.com' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">linkedin</a> and previously, mobile eng intern @ <a href='https://www.ecobee.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">ecobee</a>, <a href='https://steeresg.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">facedrive</a>
+              <span class="highlight">
+                incoming mobile eng intern @ <a href='https://www.linkedin.com' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">linkedin</a> and previously, mobile eng intern @ <a href='https://www.ecobee.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">ecobee</a>, <a href='https://steeresg.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">facedrive</a>
+              </span>
             </div>
             <br></br>
-            <a href='Resume.pdf' target="_blank" rel="noreferrer" class="text-[15px] transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">
-              resume
-            </a>
+            <span class="highlight">
+              <a href='Resume.pdf' target="_blank" rel="noreferrer" class="text-[15px] transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">
+                resume
+              </a>
+            </span>
           </div>
         </div>
         <div class="flex flex-col px-12 md:px-0 py-4 md:py-0">
