@@ -77,7 +77,7 @@ export default function NowPlaying() {
   const { data } = useSWR("/api/now-playing", fetcher);
 
   return (
-    <div class="mb-4">
+    <div class="mb-4 fadein5">
         <div>
             <nobr>
                 {data?.songUrl && data?.isPlaying ? (

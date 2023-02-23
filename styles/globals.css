@@ -67,8 +67,9 @@ body {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   user-select: none; 
-  filter: blur(0.5px);
+  filter: blur(0.25px);
   z-index: -1;
+  opacity: 0;
 }
 
 .star2 {
@@ -78,8 +79,9 @@ body {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   user-select: none; 
-  filter: blur(0.5px);
+  filter: blur(0.25px);
   z-index: -1;
+  opacity: 0;
 }
 
 .star3 {
@@ -89,8 +91,9 @@ body {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   user-select: none; 
-  filter: blur(0.5px);
+  filter: blur(0.25px);
   z-index: -1;
+  opacity: 0;
 }
 
 .meteor::before {
@@ -115,70 +118,185 @@ body {
   animation-iteration-count: infinite;
 }
 
+.fadein1 {
+  animation-name: fadeInAnimation;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.25s;
+  animation-duration: 1.2s;
+  opacity: 0;
+}
+.fadein2 {
+  animation-name: fadeInAnimation;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.33s;
+  animation-duration: 1.2s;
+  opacity: 0;
+}
+.fadein3 {
+  animation-name: fadeInAnimation;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.41s;
+  animation-duration: 1.2s;
+  opacity: 0;
+}
+.fadein4 {
+  animation-name: fadeInAnimation;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.49s;
+  animation-duration: 1.2s;
+  opacity: 0;
+}
+.fadein5 {
+  animation-name: fadeInAnimation;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.57s;
+  animation-duration: 1.2s;
+  opacity: 0;
+}
+.fadein6{
+  animation-name: fadeInAnimation;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.65s;
+  animation-duration: 1.2s;
+  opacity: 0;
+}
+
 @keyframes twinkle1 {
   0% {
     transform: translate(0);
-    opacity: 1;
+    opacity: 0;
   }
   4% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  24% {
     opacity: 0.1;
   }
-  8% {
+  28% {
     opacity: 1;
   }
   33% {
     transform: translate(-5px, 5px);
   }
+  50% {
+    opacity: 1;
+  }
+  54% {
+    opacity: 0.1;
+  }
+  56% {
+    opacity: 1;
+  }
   66% {
     transform: translate(5px, 0px);
   }
+  96% {
+    opacity: 1;
+  }
   100% {
     transform: translate(0);
-    opacity: 1;
+    opacity: 0;
   }
 }
 @keyframes twinkle2 {
   0% {
     transform: translate(0);
-    opacity: 1;
+    opacity: 0;
   }
   4% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  24% {
     opacity: 0.1;
   }
-  8% {
+  28% {
     opacity: 1;
   }
   33% {
     transform: translate(3px, 8px);
   }
+  50% {
+    opacity: 1;
+  }
+  51% { 
+    opacity: 0.7;
+  }
+  52% {
+    opacity: 1;
+  }
+  54% {
+    opacity: 0.1;
+  }
+  57% {
+    opacity: 1;
+  }
   66% {
     transform: translate(-2px, 6px);
   }
+  96% {
+    opacity: 1;
+  }
   100% {
     transform: translate(0);
-    opacity: 1;
+    opacity: 0;
   }
 }
 @keyframes twinkle3 {
   0% {
     transform: translate(0);
-    opacity: 1;
+    opacity: 0;
   }
   4% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  24% {
     opacity: 0.1;
   }
-  8% {
+  28% {
     opacity: 1;
   }
   33% {
     transform: translate(-5px, -2.5px);
   }
+  50% {
+    opacity: 1;
+  }
+  54% {
+    opacity: 0.1;
+  }
+  55% {
+    opacity: 1;
+  }
   66% {
     transform: translate(-5px, -10px);
   }
+  96% {
+    opacity: 1;
+  }
   100% {
     transform: translate(0);
-    opacity: 1;
+    opacity: 0;
   }
 }
 

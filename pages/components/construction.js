@@ -1,6 +1,6 @@
 export default function Construction() {
     return (
-        <div class="construction-border">
+        <div class="construction-border fadein6">
             <br class="seperator"></br>
             <div class="center">under construction</div>
             <br class="seperator"></br>

@@ -13,49 +13,49 @@ export default function Home() {
     var body = document.body,
     html = document.documentElement;
 
-    // MARK: EXPLOSION
+    // // MARK: EXPLOSION
 
-    const delta = 6;
-    let startX;
-    let startY;
+    // const delta = 6;
+    // let startX;
+    // let startY;
 
-    document.addEventListener("mousedown", (e) => {
-      startX = e.clientX;
-      startY = e.clientY;
-    });
+    // document.addEventListener("mousedown", (e) => {
+    //   startX = e.clientX;
+    //   startY = e.clientY;
+    // });
 
-    document.addEventListener("mouseup", (e) => {
-      let x = e.pageX;
-      let y = e.pageY;
-      const diffX = Math.abs(x - startX);
-      const diffY = Math.abs(y - startY);
+    // document.addEventListener("mouseup", (e) => {
+    //   let x = e.pageX;
+    //   let y = e.pageY;
+    //   const diffX = Math.abs(x - startX);
+    //   const diffY = Math.abs(y - startY);
 
-      var elem = document.elementFromPoint(x, y);
+    //   var elem = document.elementFromPoint(x, y);
       
-      if (diffX < delta && diffY < delta && elem.nodeName != "A" && e.button === 0 && screen.width >= 768) {
-        var audio = new Audio('explosion.mp3?' + Math.random());
-        audio.volume = 0.03;
+    //   if (diffX < delta && diffY < delta && elem.nodeName != "A" && e.button === 0 && screen.width >= 768) {
+    //     var audio = new Audio('explosion.mp3?' + Math.random());
+    //     audio.volume = 0.03;
 
-        var img = document.createElement('img');
-        img.className = "gif-player";
-        img.style.pointerEvents = "none";
-        img.src = 'explosion.gif?' + Math.random();
+    //     var img = document.createElement('img');
+    //     img.className = "gif-player";
+    //     img.style.pointerEvents = "none";
+    //     img.src = 'explosion.gif?' + Math.random();
 
-        var div = document.createElement('div');
-        div.appendChild(img);
-        div.style.left = (x - 25) + "px";
-        div.style.top = (y - 36) + "px";
-        div.style.position = "absolute";
-        div.style.pointerEvents = "none";
+    //     var div = document.createElement('div');
+    //     div.appendChild(img);
+    //     div.style.left = (x - 25) + "px";
+    //     div.style.top = (y - 36) + "px";
+    //     div.style.position = "absolute";
+    //     div.style.pointerEvents = "none";
         
-        document.body.appendChild(div);
-        audio.play();
+    //     document.body.appendChild(div);
+    //     audio.play();
 
-        setTimeout(() => {
-          div.remove();
-        }, 1500);
-      }
-    });
+    //     setTimeout(() => {
+    //       div.remove();
+    //     }, 1500);
+    //   }
+    // });
 
     // MARK: STARS
 
@@ -91,13 +91,13 @@ export default function Home() {
       } else {
         star.className += 'star3';
       }
-      star.style.top = `${getRandomInt(0, window.innerHeight - 20)}px`;
+      star.style.top = `${getRandomInt(0, window.innerHeight - 50)}px`;
       if (screen.width < 768) {
-        star.style.top = `${getRandomInt(0, Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight ) - 20)}px`;
+        star.style.top = `${getRandomInt(0, Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight ) - 50)}px`;
       }
-      star.style.left = `${getRandomInt(0, window.innerWidth - 10)}px`;
+      star.style.left = `${getRandomInt(0, window.innerWidth - 15)}px`;
       star.style.color = getColor();
-      star.style['animation-delay'] = `${getRandomInt(0, 20)}s`;
+      star.style['animation-delay'] = `${Math.max(((getRandomInt(0, 75) + getRandomInt(0, 75)) / 10) - 1.85, 1.85 + (getRandomInt(0, 100) / 100))}s`;
       star.style['animation-duration'] = `${(getRandomInt(0, 400) / 100) + 16}s`;
       star.style.zIndex = -1;
       document.body.appendChild(star);
@@ -107,9 +107,9 @@ export default function Home() {
       return Math.floor(Math.random() * (max - min)) + min;
     }
     
-    let starCount = 100;
+    let starCount = 65;
     if (screen.width >= 768) {
-      starCount = 130;
+      starCount = 80;
     }
     for (let i = 0; i < starCount; i++) {
       createStar();
@@ -134,6 +134,7 @@ export default function Home() {
     }
 
     async function renderMeteors (c) {
+      await timeout(3000);
       const meteorCount = c;
       for (let i = 0; i < meteorCount; i++) {
         createMeteor(i);
@@ -167,7 +168,7 @@ export default function Home() {
         <meta property="twitter:image" content="https://www.leondong.com/pfp.jpg"></meta>
       </Head>
       <div class="realbody blurryback">
-        <div class="flex flex-col md:flex-row h-100 md:h-48 mt-12 md:mt-0 mb-2.5">
+        <div class="flex flex-col md:flex-row h-100 md:h-48 mt-12 md:mt-0 mb-2.5 fadein1">
           {/* <script src='./coolstuff/sparkle.js' async></script>
           <script src="https://webneko.net/n20171213.js" async></script> */}
           <div class="basis-full md:basis-1/4">
@@ -200,7 +201,7 @@ export default function Home() {
 
           <Others />
 
-          <p class="text-clip overflow-hidden mb-2.5 seperator">
+          <p class="text-clip overflow-hidden mb-2.5 seperator fadein4">
           ...........................................................................................................................................................................
           </p>
 

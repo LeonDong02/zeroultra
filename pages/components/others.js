@@ -1,6 +1,6 @@
 export default function Others() {
     return (
-        <div>
+        <div class="fadein3">
             <div class="text-xl font-bold">
                 other cool stuff
             </div>
