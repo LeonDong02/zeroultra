@@ -148,9 +148,16 @@ export default function Home() {
 
     // MARK: MUSIC
 
-    var audio = new Audio('SwedenC418.mp3');
-    audio.volume = 0.5;
-    audio.play();
+    document.addEventListener("click", (e) => {
+      var music = new Audio('SwedenC418.mp3');
+      var crickets = new Audio('crickets.mp3');
+      music.volume = 0.01;
+      music.loop = true;
+      music.play();
+      crickets.volume = 0.02;
+      crickets.loop = true;
+      crickets.play();
+    })
 
   }, []);
 
