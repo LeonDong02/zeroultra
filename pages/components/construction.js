@@ -2,7 +2,7 @@ export default function Construction({stargaze}) {
     return (
         <div class={stargaze ? "fadeout construction-border" : "fadein6 construction-border"}>
             <br class="seperator"></br>
-            <div class="center">under construction</div>
+            <div class="center"><span class="highlight">under construction</span></div>
             <br class="seperator"></br>
             <div class="center">
                 <span class="highlight">

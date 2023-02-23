@@ -65,7 +65,7 @@ body {
 }
 
 .fadeout {
-  animation: fadeOutAnimation ease 1.5s;
+  animation: fadeOutAnimation ease 1.25s;
   animation-fill-mode: forwards;
 }
 

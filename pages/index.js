@@ -9,6 +9,7 @@ import React, { useEffect, useState } from 'react';
 export default function Home() {
 
   const [stargaze, setStargaze] = React.useState(false);
+  const [played, setPlayed] = React.useState(false);
 
   useEffect(() => {
 
@@ -109,9 +110,9 @@ export default function Home() {
       return Math.floor(Math.random() * (max - min)) + min;
     }
     
-    let starCount = 100;
+    let starCount = 120;
     if (screen.width >= 768) {
-      starCount = 125;
+      starCount = 150;
     }
     for (let i = 0; i < starCount; i++) {
       createStar();
@@ -148,25 +149,23 @@ export default function Home() {
       renderMeteors(8);
     }
 
-    // MARK: MUSIC
-
-    var flag = 0;
-    window.addEventListener("click", (e) => {
-      console.log("here");
-      if (flag == 0) {
-        var music = new Audio('SwedenC418.mp3');
-        var crickets = new Audio('crickets.mp3');
-        music.volume = 0.01;
-        music.loop = true;
-        crickets.volume = 0.015;
-        crickets.loop = true;
-        music.play();
-        crickets.play();
-        flag = 1;
-      }
-    })
-
   }, []);
+
+  // MARK: MUSIC
+
+  function playSounds() {
+    if (!played) {
+      var music = new Audio('SwedenC418.mp3');
+      var crickets = new Audio('crickets.mp3');
+      music.volume = 0.01;
+      music.loop = true;
+      crickets.volume = 0.015;
+      crickets.loop = true;
+      music.play();
+      crickets.play();
+      setPlayed(true);
+    }
+  }
 
   return (
     <div class="font-mono text-[13px] leading-[1.5] md:leading-[1.15] w-[100vw] md:w-full mx-auto">
@@ -189,9 +188,9 @@ export default function Home() {
       </Head>
       <div class="realbody blurryback">
         { !stargaze ? (
-          <button class="stargazebutton1" onClick={() => setStargaze(true)}>[<span class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">stargaze?</span>]</button>
+          <button class="stargazebutton1" onClick={() => {setStargaze(true); playSounds();}}>[<span class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100 highlight">stargaze?</span>]</button>
         ) : (
-          <button class="stargazebutton2" onClick={() => setStargaze(false)}>[<span class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">go back</span>]</button>
+          <button class="stargazebutton2" onClick={() => setStargaze(false)}>[<span class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100 highlight">go back</span>]</button>
         )}
         <div class={stargaze ? "fadeout flex flex-col md:flex-row h-100 md:h-48 mt-12 md:mt-0 mb-2.5" : "fadein1 flex flex-col md:flex-row h-100 md:h-48 mt-12 md:mt-0 mb-2.5"}>
           {/* <script src='./coolstuff/sparkle.js' async></script>
