@@ -107,9 +107,9 @@ export default function Home() {
       return Math.floor(Math.random() * (max - min)) + min;
     }
     
-    let starCount = 65;
+    let starCount = 80;
     if (screen.width >= 768) {
-      starCount = 80;
+      starCount = 100;
     }
     for (let i = 0; i < starCount; i++) {
       createStar();
