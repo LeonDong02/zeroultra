@@ -2,7 +2,9 @@ export default function Others() {
     return (
         <div class="fadein3">
             <div class="text-xl font-bold">
-                other cool stuff
+                <span class="highlight">
+                    other cool stuff
+                </span>
             </div>
             <div class="overflowxscroll">
                 <div class="flex flex-col md:flex-row">
