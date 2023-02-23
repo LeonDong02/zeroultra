@@ -146,6 +146,12 @@ export default function Home() {
       renderMeteors(8);
     }
 
+    // MARK: MUSIC
+
+    var audio = new Audio('SwedenC418.mp3');
+    audio.volume = 0.5;
+    audio.play();
+
   }, []);
 
   return (
