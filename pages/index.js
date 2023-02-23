@@ -149,7 +149,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div class="font-mono text-[13px] leading-[1.15] w-[100vw] md:w-full mx-auto">
+    <div class="font-mono text-[13px] leading-[1.5] md:leading-[1.15] w-[100vw] md:w-full mx-auto">
       <Head>
         <title>leon dong</title>
         <meta name="title" content="leon dong"></meta>
