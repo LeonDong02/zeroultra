@@ -1,6 +1,6 @@
 export default function Others({stargaze}) {
     return (
-        <div class={stargaze ? "fadeout" : "fadein3"}>
+        <div class={stargaze ? "fadeout3" : "fadein3"}>
             <div class="text-xl font-bold">
                 <span class="highlight">
                     other cool stuff

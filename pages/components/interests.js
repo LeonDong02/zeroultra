@@ -1,6 +1,6 @@
 export default function Interests({stargaze}) {
     return (
-        <div class={stargaze ? "fadeout" : "fadein2"}>
+        <div class={stargaze ? "fadeout2" : "fadein2"}>
             <div class="text-xl font-bold">
                 <span class="highlight">
                     interests

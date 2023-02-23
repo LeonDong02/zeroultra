@@ -77,7 +77,7 @@ export default function NowPlaying({stargaze}) {
   const { data } = useSWR("/api/now-playing", fetcher);
 
   return (
-    <div class={stargaze ? "fadeout mb-4" : "fadein5 mb-4"}>
+    <div class={stargaze ? "fadeout5 mb-4" : "fadein5 mb-4"}>
         <div>
             <nobr>
                 {data?.songUrl && data?.isPlaying ? (

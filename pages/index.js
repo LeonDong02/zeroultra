@@ -192,7 +192,7 @@ export default function Home() {
         ) : (
           <button class="stargazebutton2" onClick={() => setStargaze(false)}>[<span class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100 highlight">go back</span>]</button>
         )}
-        <div class={stargaze ? "fadeout flex flex-col md:flex-row h-100 md:h-48 mt-12 md:mt-0 mb-2.5" : "fadein1 flex flex-col md:flex-row h-100 md:h-48 mt-12 md:mt-0 mb-2.5"}>
+        <div class={stargaze ? "fadeout1 flex flex-col md:flex-row h-100 md:h-48 mt-12 md:mt-0 mb-2.5" : "fadein1 flex flex-col md:flex-row h-100 md:h-48 mt-12 md:mt-0 mb-2.5"}>
           {/* <script src='./coolstuff/sparkle.js' async></script>
           <script src="https://webneko.net/n20171213.js" async></script> */}
           <div class="basis-full md:basis-1/4">
@@ -225,7 +225,7 @@ export default function Home() {
 
           <Others stargaze={stargaze} />
       
-          <p class={stargaze ? "fadeout text-clip overflow-hidden mb-2.5 seperator" : "fadein4 text-clip overflow-hidden mb-2.5 seperator"}>
+          <p class={stargaze ? "fadeout4 text-clip overflow-hidden mb-2.5 seperator" : "fadein4 text-clip overflow-hidden mb-2.5 seperator"}>
           ...........................................................................................................................................................................
           </p>
 
