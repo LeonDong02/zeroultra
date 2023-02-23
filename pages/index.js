@@ -4,9 +4,11 @@ import Spotify from './components/spotify'
 import Construction from './components/construction'
 import Head from 'next/head'
 import Script from 'next/script'
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 export default function Home() {
+
+  const [stargaze, setStargaze] = React.useState(false);
 
   useEffect(() => {
 
@@ -148,15 +150,20 @@ export default function Home() {
 
     // MARK: MUSIC
 
-    document.addEventListener("click", (e) => {
-      var music = new Audio('SwedenC418.mp3');
-      var crickets = new Audio('crickets.mp3');
-      music.volume = 0.01;
-      music.loop = true;
-      music.play();
-      crickets.volume = 0.015;
-      crickets.loop = true;
-      crickets.play();
+    var flag = 0;
+    window.addEventListener("click", (e) => {
+      console.log("here");
+      if (flag == 0) {
+        var music = new Audio('SwedenC418.mp3');
+        var crickets = new Audio('crickets.mp3');
+        music.volume = 0.01;
+        music.loop = true;
+        crickets.volume = 0.015;
+        crickets.loop = true;
+        music.play();
+        crickets.play();
+        flag = 1;
+      }
     })
 
   }, []);
@@ -181,7 +188,12 @@ export default function Home() {
         <meta property="twitter:image" content="https://www.leondong.com/pfp.jpg"></meta>
       </Head>
       <div class="realbody blurryback">
-        <div class="flex flex-col md:flex-row h-100 md:h-48 mt-12 md:mt-0 mb-2.5 fadein1">
+        { !stargaze ? (
+          <button class="stargazebutton1" onClick={() => setStargaze(true)}>[<span class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">stargaze?</span>]</button>
+        ) : (
+          <button class="stargazebutton2" onClick={() => setStargaze(false)}>[<span class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">go back</span>]</button>
+        )}
+        <div class={stargaze ? "fadeout flex flex-col md:flex-row h-100 md:h-48 mt-12 md:mt-0 mb-2.5" : "fadein1 flex flex-col md:flex-row h-100 md:h-48 mt-12 md:mt-0 mb-2.5"}>
           {/* <script src='./coolstuff/sparkle.js' async></script>
           <script src="https://webneko.net/n20171213.js" async></script> */}
           <div class="basis-full md:basis-1/4">
@@ -210,20 +222,20 @@ export default function Home() {
           </div>
         </div>
         <div class="flex flex-col px-12 md:px-0 py-4 md:py-0">
-          <Interests />
+          <Interests stargaze={stargaze} />
 
-          <Others />
-
-          <p class="text-clip overflow-hidden mb-2.5 seperator fadein4">
+          <Others stargaze={stargaze} />
+      
+          <p class={stargaze ? "fadeout text-clip overflow-hidden mb-2.5 seperator" : "fadein4 text-clip overflow-hidden mb-2.5 seperator"}>
           ...........................................................................................................................................................................
           </p>
 
-          <Spotify />
+          <Spotify stargaze={stargaze} />
           {/* <br></br>
           <div>Website very WIP</div>
           <br></br>
           <div>Built with blood, sweat, and Monster™ Zero Ultra</div> */}
-          <Construction />
+          <Construction stargaze={stargaze} />
         </div>
       </div>
     </div>
