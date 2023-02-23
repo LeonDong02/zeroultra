@@ -154,7 +154,7 @@ export default function Home() {
       music.volume = 0.01;
       music.loop = true;
       music.play();
-      crickets.volume = 0.02;
+      crickets.volume = 0.015;
       crickets.loop = true;
       crickets.play();
     })
