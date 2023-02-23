@@ -204,27 +204,27 @@ body {
 }
 .fadeout2 {
   animation: fadeOutAnimation ease 1s;
-  animation-delay: 0.17s;
+  animation-delay: 0.12s;
   animation-fill-mode: forwards;
 }
 .fadeout3 {
   animation: fadeOutAnimation ease 1s;
-  animation-delay: 0.24s;
+  animation-delay: 0.14s;
   animation-fill-mode: forwards;
 }
 .fadeout4 {
   animation: fadeOutAnimation ease 1s;
-  animation-delay: 0.31s;
+  animation-delay: 0.16s;
   animation-fill-mode: forwards;
 }
 .fadeout5 {
   animation: fadeOutAnimation ease 1s;
-  animation-delay: 0.38s;
+  animation-delay: 0.18s;
   animation-fill-mode: forwards;
 }
 .fadeout6 {
   animation: fadeOutAnimation ease 1s;
-  animation-delay: 0.45s;
+  animation-delay: 0.2s;
   animation-fill-mode: forwards;
 }
 
