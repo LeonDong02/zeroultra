@@ -204,6 +204,7 @@ export default function Home() {
               <span class="highlight">
                 i&apos;m a 3rd year computer science student with a minor in combinatorics and optimization @&nbsp;
                 <a href='https://uwaterloo.ca/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">uwaterloo</a>
+                ,&nbsp;seeking fall 2023 internships
               </span>
             </div>
             <br></br>
