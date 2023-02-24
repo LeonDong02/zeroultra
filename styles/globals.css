@@ -3,11 +3,25 @@
 @tailwind utilities;
 
 @media only screen and (min-width: 768px) {
+  html {
+    animation-name: backgroundcolortransition;
+    animation-timing-function: ease;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+  }
+
   body {
     display: block;
     width: 748px;
     margin: auto auto 1em;
-    margin-top: 92px;
+    margin-top: 92px
+  }
+
+  .highlight {
+    animation-name: highlightcolortransition;
+    animation-timing-function: ease;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
   }
 }
 
@@ -18,10 +32,6 @@ html {
   background: rgb(16,10,45);
   background: linear-gradient(163deg, rgba(16,10,45,1) 0%, rgba(17,5,50,1) 12%, rgba(27,17,61,1) 23%, rgba(32,11,59,1) 49%, rgba(20,12,57,1) 79%, rgba(16,8,46,1) 90%, rgba(12,7,34,1) 100%);
   background-attachment: fixed;
-  animation-name: backgroundcolortransition;
-  animation-timing-function: ease;
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
 }
 
 body {
@@ -63,10 +73,6 @@ body {
 
 .highlight {
   background-color: rgb(30, 14, 60);
-  animation-name: highlightcolortransition;
-  animation-timing-function: ease;
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
 }
 
 .overflowxscroll {
