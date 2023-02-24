@@ -188,9 +188,9 @@ export default function Home() {
       </Head>
       <div class="realbody blurryback">
         { !stargaze ? (
-          <button class="stargazebutton1" onClick={() => {setStargaze(true); playSounds();}}>[<span class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100 highlight">stargaze?</span>]</button>
+            <div class="stargazebutton1">[<a href="#" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100 highlight" onClick={() => {setStargaze(true); playSounds();}}>stargaze?</a>]</div>
         ) : (
-          <button class="stargazebutton2" onClick={() => setStargaze(false)}>[<span class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100 highlight">go back</span>]</button>
+            <div class="stargazebutton1">[<a href="#" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100 highlight" onClick={() => {setStargaze(false);}}>go back</a>]</div>
         )}
         <div class={stargaze ? "fadeout1 flex flex-col md:flex-row h-100 md:h-48 mt-12 md:mt-0 mb-2.5" : "fadein1 flex flex-col md:flex-row h-100 md:h-48 mt-12 md:mt-0 mb-2.5"}>
           {/* <script src='./coolstuff/sparkle.js' async></script>
