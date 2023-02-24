@@ -239,7 +239,7 @@ body {
 
 @keyframes backgroundcolortransition {
   0% {
-    backdrop-filter: brightness(0.3);
+    backdrop-filter: brightness(0.4);
   }
   100% {
     backdrop-filter: brightness(1);
@@ -248,7 +248,7 @@ body {
 
 @keyframes highlightcolortransition {
   0% {
-    filter: brightness(0.3);
+    filter: brightness(0.4);
   }
   100% {
     filter: brightness(1);
