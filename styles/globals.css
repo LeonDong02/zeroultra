@@ -12,11 +12,16 @@
 }
 
 html {
+  min-height: 100%;
   color-scheme: dark;
   color: white;
-  background: rgb(8, 5, 23);
-  background: linear-gradient(163deg, rgba(8,5,23,1) 0%, rgba(9,5,32,1) 12%, rgba(13,8,29,1) 23%, rgba(20,7,31,1) 49%, rgba(12,7,34,1) 76%, rgba(11,6,32,1) 88%, rgba(8,5,23,1) 100%);
+  background: rgb(16,10,45);
+  background: linear-gradient(163deg, rgba(16,10,45,1) 0%, rgba(16,5,46,1) 12%, rgba(27,17,61,1) 23%, rgba(32,11,59,1) 49%, rgba(20,12,57,1) 79%, rgba(16,8,46,1) 90%, rgba(12,7,34,1) 100%);
   background-attachment: fixed;
+  animation-name: backgroundcolortransition;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
 }
 
 body {
@@ -57,7 +62,11 @@ body {
 }
 
 .highlight {
-  background-color: rgb(8, 5, 23);
+  background-color: rgb(30, 14, 60);
+  animation-name: highlightcolortransition;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
 }
 
 .overflowxscroll {
@@ -228,6 +237,23 @@ body {
   animation-fill-mode: forwards;
 }
 
+@keyframes backgroundcolortransition {
+  0% {
+    backdrop-filter: brightness(0.3);
+  }
+  100% {
+    backdrop-filter: brightness(1);
+  }
+}
+
+@keyframes highlightcolortransition {
+  0% {
+    filter: brightness(0.3);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
 
 @keyframes twinkle1 {
   0% {
