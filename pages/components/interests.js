@@ -51,6 +51,19 @@ export default function Interests({stargaze}) {
                                 ]
                             </span>
                         </li>
+                        <li class="mb-1">
+                            <span class="highlight">
+                                web3 <br></br>[
+                                <a href='https://github.com/LeonDong02/habipets' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">
+                                habipets
+                                </a>
+                                /
+                                <a href='https://twitter.com/uw_blockchain' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">
+                                uwblockchain
+                                </a>
+                                ]
+                            </span>
+                        </li>
                     </ul>
                 </div>
                 <div class="basis-1/2">
@@ -70,6 +83,23 @@ export default function Interests({stargaze}) {
                                 <a href='https://uwflow.com/course/co481' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">
                                 co481
                                 </a>
+                                ]
+                            </span>
+                        </li>
+                        <li class="mb-1">
+                            <span class="highlight">
+                                others <br></br>[
+                                <span class="text-violet-500">
+                                uiux
+                                </span>
+                                /
+                                <span class="text-violet-500">
+                                gamedev
+                                </span>
+                                /
+                                <span class="text-violet-500">
+                                hft
+                                </span>
                                 ]
                             </span>
                         </li>

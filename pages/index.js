@@ -204,7 +204,7 @@ export default function Home() {
               <span class="highlight">
                 i&apos;m a 3rd year computer science student with a minor in combinatorics and optimization @&nbsp;
                 <a href='https://uwaterloo.ca/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">uwaterloo</a>
-                ,&nbsp;seeking fall 2023 internships
+                , seeking fall 2023 internships
               </span>
             </div>
             <br></br>
@@ -212,6 +212,7 @@ export default function Home() {
               <span class="highlight">
                 incoming mobile eng intern @ <a href='https://www.linkedin.com' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">linkedin</a> and previously, mobile eng intern @ <a href='https://www.ecobee.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">ecobee</a>, <a href='https://steeresg.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">facedrive</a>
               </span>
+              <br></br>
             </div>
             <br></br>
             <span class="highlight">
