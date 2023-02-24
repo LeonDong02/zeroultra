@@ -31,7 +31,7 @@ html {
   color-scheme: dark;
   color: white;
   background: rgb(16,10,45);
-  background: linear-gradient(163deg, rgba(16,10,45,1) 0%, rgba(17,5,50,1) 12%, rgba(27,17,61,1) 23%, rgba(32,11,59,1) 49%, rgba(20,12,57,1) 79%, rgba(16,8,46,1) 90%, rgba(12,7,34,1) 100%);
+  background: linear-gradient(163deg, rgba(16,10,45,1) 0%, rgba(22,8,61,1) 12%, rgba(27,17,61,1) 28%, rgba(32,11,59,1) 49%, rgba(20,12,57,1) 79%, rgba(16,8,46,1) 90%, rgba(12,7,34,1) 100%);
   background-attachment: fixed;
 }
 
