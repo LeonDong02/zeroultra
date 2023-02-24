@@ -158,9 +158,9 @@ export default function Home() {
       var music = new Audio('SwedenC418.mp3');
       var crickets = new Audio('crickets.mp3');
       music.volume = 0.03;
-      music.loop = true;
+      music.loop = stargaze;
       crickets.volume = 0.045;
-      crickets.loop = true;
+      crickets.loop = stargaze;
       music.play();
       crickets.play();
       setPlayed(true);

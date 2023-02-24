@@ -83,7 +83,7 @@ export default function Others({stargaze}) {
                                 linkedin
                                 </a>
                                 /
-                                <a href='https://twitter.com/wetpeeker' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">
+                                <a href='https://twitter.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">
                                 twitter
                                 </a>
                                 /
