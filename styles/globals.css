@@ -20,7 +20,7 @@ html {
   background-attachment: fixed;
   animation-name: backgroundcolortransition;
   animation-timing-function: ease;
-  animation-duration: 4s;
+  animation-duration: 5s;
   animation-fill-mode: forwards;
 }
 
@@ -65,7 +65,7 @@ body {
   background-color: rgb(30, 14, 60);
   animation-name: highlightcolortransition;
   animation-timing-function: ease;
-  animation-duration: 4s;
+  animation-duration: 5s;
   animation-fill-mode: forwards;
 }
 
@@ -248,10 +248,10 @@ body {
 
 @keyframes highlightcolortransition {
   0% {
-    filter: brightness(0.4);
+    background-color: rgb(8, 5, 23);
   }
   100% {
-    filter: brightness(1);
+    background-color: rgb(30, 14, 60);
   }
 }
 
