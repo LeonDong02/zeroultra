@@ -96,7 +96,7 @@ export default function Home() {
       }
       star.style.top = `${getRandomInt(0, window.innerHeight - 50)}px`;
       if (screen.width < 768) {
-        star.style.top = `${getRandomInt(0, Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight ) - 50)}px`;
+        star.style.top = `${getRandomInt(0, Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight ))}px`;
       }
       star.style.left = `${getRandomInt(0, window.innerWidth - 15)}px`;
       star.style.color = getColor();
