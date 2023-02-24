@@ -18,7 +18,7 @@
   }
 
   .highlight {
-    background-color: rgb(30, 14, 60);
+    background-color: rgb(26, 15, 55);
     animation-name: highlightcolortransition;
     animation-timing-function: ease;
     animation-duration: 5s;
@@ -31,7 +31,7 @@ html {
   color-scheme: dark;
   color: white;
   background: rgb(16,10,45);
-  background: linear-gradient(163deg, rgba(16,10,45,1) 0%, rgba(22,8,61,1) 12%, rgba(27,17,61,1) 28%, rgba(32,11,59,1) 49%, rgba(20,12,57,1) 79%, rgba(16,8,46,1) 90%, rgba(12,7,34,1) 100%);
+  background: linear-gradient(163deg, rgba(16,10,45,1) 0%, rgba(21,7,57,1) 12%, rgba(25,16,56,1) 28%, rgba(28,10,52,1) 49%, rgba(17,10,50,1) 79%, rgba(14,7,40,1) 90%, rgba(12,7,34,1) 100%);
   background-attachment: fixed;
 }
 
@@ -254,7 +254,7 @@ body {
     background-color: rgb(8, 5, 23);
   }
   100% {
-    background-color: rgb(30, 14, 60);
+    background-color: rgb(26, 15, 55);
   }
 }
 
