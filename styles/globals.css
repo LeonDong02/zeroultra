@@ -6,7 +6,7 @@
   html {
     animation-name: backgroundcolortransition;
     animation-timing-function: ease;
-    animation-duration: 5s;
+    animation-duration: 2.5s;
     animation-fill-mode: forwards;
   }
 
@@ -21,7 +21,7 @@
     background-color: rgb(26, 15, 55);
     animation-name: highlightcolortransition;
     animation-timing-function: ease;
-    animation-duration: 5s;
+    animation-duration: 2.5s;
     animation-fill-mode: forwards;
   }
 }
@@ -30,7 +30,7 @@ html {
   min-height: 100%;
   color-scheme: dark;
   color: white;
-  background: rgb(16,10,45);
+  background: rgb(0,0,0);
   background: linear-gradient(163deg, rgba(16,10,45,1) 0%, rgba(21,7,57,1) 12%, rgba(25,16,56,1) 28%, rgba(28,10,52,1) 49%, rgba(17,10,50,1) 79%, rgba(14,7,40,1) 90%, rgba(12,7,34,1) 100%);
   background-attachment: fixed;
 }
@@ -242,10 +242,10 @@ body {
 
 @keyframes backgroundcolortransition {
   0% {
-    backdrop-filter: brightness(0.4);
+    opacity: 0;
   }
   100% {
-    backdrop-filter: brightness(1);
+    opacity: 1;
   }
 }
 
