@@ -94,9 +94,9 @@ export default function Home() {
       } else {
         star.className += 'star3';
       }
-      star.style.top = `${getRandomInt(0, window.innerHeight - 50)}px`;
+      star.style.top = `${getRandomInt(5, window.innerHeight - 50)}px`;
       if (screen.width < 768) {
-        star.style.top = `${getRandomInt(0, Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight ))}px`;
+        star.style.top = `${getRandomInt(5, Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight ))}px`;
       }
       star.style.left = `${getRandomInt(25, window.innerWidth - 25)}px`;
       star.style.color = getColor();
