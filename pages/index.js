@@ -98,7 +98,7 @@ export default function Home() {
       if (screen.width < 768) {
         star.style.top = `${getRandomInt(0, Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight ))}px`;
       }
-      star.style.left = `${getRandomInt(0, window.innerWidth - 15)}px`;
+      star.style.left = `${getRandomInt(25, window.innerWidth - 25)}px`;
       star.style.color = getColor();
       star.style['animation-delay'] = `${Math.max(((getRandomInt(0, 75) + getRandomInt(0, 75)) / 10) - 1.85, 1.85 + (getRandomInt(0, 100) / 100))}s`;
       star.style['animation-duration'] = `${(getRandomInt(0, 400) / 100) + 16}s`;
