@@ -3,12 +3,6 @@
 @tailwind utilities;
 
 @media only screen and (min-width: 768px) {
-  html {
-    animation-name: backgroundcolortransition;
-    animation-timing-function: ease;
-    animation-duration: 2.5s;
-    animation-fill-mode: forwards;
-  }
 
   body {
     display: block;
@@ -17,13 +11,21 @@
     margin-top: 92px
   }
 
-  .highlight {
-    background-color: rgb(26, 15, 55);
-    animation-name: highlightcolortransition;
-    animation-timing-function: ease;
-    animation-duration: 2.5s;
-    animation-fill-mode: forwards;
-  }
+}
+
+.highlight {
+  background-color: rgb(26, 15, 55);
+  animation-name: highlightcolortransition;
+  animation-timing-function: ease;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+html {
+  animation-name: backgroundcolortransition;
+  animation-timing-function: ease;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
 }
 
 html {
