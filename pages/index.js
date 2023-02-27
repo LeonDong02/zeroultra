@@ -94,11 +94,11 @@ export default function Home() {
       } else {
         star.className += 'star3';
       }
-      star.style.top = `${getRandomInt(5, window.innerHeight - 50)}px`;
+      star.style.top = `${getRandomInt(5, window.innerHeight - 60)}px`;
       if (screen.width < 768) {
         star.style.top = `${getRandomInt(5, Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight ))}px`;
       }
-      star.style.left = `${getRandomInt(25, window.innerWidth - 25)}px`;
+      star.style.left = `${getRandomInt(30, window.innerWidth - 30)}px`;
       if (screen.width < 768) {
         star.style.left = `${getRandomInt(0, window.innerWidth)}px`;
       }
@@ -129,7 +129,7 @@ export default function Home() {
       const meteor = document.createElement('div');
       meteor.className += 'meteor';
       meteor.style.top = `${getRandomInt(50, 250)}px`;
-      meteor.style.left = `${getRandomInt(9, 19) + (getRandomInt(permutation[i], permutation[i] + 1) * 10)}%`;
+      meteor.style.left = `${getRandomInt(9, 18) + (getRandomInt(permutation[i], permutation[i] + 1) * 9)}%`;
       meteor.style['animation-duration'] = `${(getRandomInt(0, 60) / 10) + 7.5}s`;
       meteor.style.zIndex = -1;
       document.body.appendChild(meteor);
