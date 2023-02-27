@@ -240,9 +240,11 @@ body {
 
 @keyframes backgroundcolortransition {
   0% {
+    backdrop-filter: brightness(0.3);
     filter: brightness(0.3);
   }
   100% {
+    backdrop-filter: brightness(1);
     filter: brightness(1);
   }
 }
