@@ -103,7 +103,7 @@ export default function Home() {
         star.style.left = `${getRandomInt(0, window.innerWidth)}px`;
       }
       star.style.color = getColor();
-      star.style['animation-delay'] = `${Math.max(((getRandomInt(0, 75) + getRandomInt(0, 75)) / 10) - 1.5, 3 + (getRandomInt(0, 100) / 100))}s`;
+      star.style['animation-delay'] = `${Math.max(((getRandomInt(0, 85) + getRandomInt(0, 85)) / 10) - 2, 3 + (getRandomInt(0, 100) / 100))}s`;
       star.style['animation-duration'] = `${(getRandomInt(0, 400) / 100) + 16}s`;
       star.style.zIndex = -1;
       document.body.appendChild(star);
