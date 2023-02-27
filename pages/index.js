@@ -106,7 +106,7 @@ export default function Home() {
       star.style['animation-delay'] = `${Math.max(((getRandomInt(0, 85) + getRandomInt(0, 85)) / 10) - 2, 3 + (getRandomInt(0, 100) / 100))}s`;
       star.style['animation-duration'] = `${(getRandomInt(0, 400) / 100) + 16}s`;
       star.style.zIndex = -1;
-      document.body.appendChild(star);
+      return star;
     }
     
     function getRandomInt(min, max) {
@@ -117,9 +117,13 @@ export default function Home() {
     if (screen.width >= 768) {
       starCount = 150;
     }
+    const container = document.createElement('div');
+    container.className = 'starparent blurred';
+    container.style.zIndex = -1;
     for (let i = 0; i < starCount; i++) {
-      createStar();
+      container.appendChild(createStar());
     }
+    document.body.appendChild(container);
 
     // MARK: METEORS
 
@@ -169,6 +173,20 @@ export default function Home() {
       setPlayed(true);
     }
   }
+
+  useEffect(() => {
+    const star = document.getElementsByClassName("starparent");
+    
+    if (stargaze) {
+      for (let i = 0; i < star.length; i++) {
+        star[i].className = "starparent unblurred";
+      }
+    } else {
+      for (let i = 0; i < star.length; i++) {
+        star[i].className = "starparent blurred";
+      }
+    }
+  }, [stargaze]);
 
   return (
     <div class="font-mono text-[13px] leading-[1.5] md:leading-[1.15] w-[100vw] md:w-full mx-auto">

@@ -66,10 +66,6 @@ body {
   opacity: 0;
 }
 
-.blurryback {
-  background: rgb(8, 5, 23, 0.01);
-}
-
 .overflowxscroll {
   overflow: auto;
 }
@@ -92,6 +88,50 @@ body {
 .construction-border {
   border:2px solid white;
   border-style: dashed;
+}
+
+.starparent {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.meteorparent {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.blurred {
+  animation-name: blurring;
+  animation-timing-function: ease;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes blurring {
+  0% {
+    filter: blur(0px);
+  }
+  100% {
+    filter: blur(1.5px); 
+  }
+}
+
+.unblurred {
+  animation-name: unblurring;
+  animation-timing-function: ease;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes unblurring {
+  0% {
+    filter: blur(1.5px);
+  }
+  100% {
+    filter: blur(0px);
+  }
 }
 
 .star1 {
