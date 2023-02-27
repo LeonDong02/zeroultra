@@ -144,7 +144,7 @@ export default function Home() {
     }
 
     async function renderMeteors (c) {
-      await timeout(3500);
+      await timeout(4000);
       const meteorCount = c;
       for (let i = 0; i < meteorCount; i++) {
         createMeteor(i);
