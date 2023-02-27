@@ -13,18 +13,10 @@
 
 }
 
-.highlight {
-  background-color: rgb(26, 15, 55);
-  animation-name: highlightcolortransition;
-  animation-timing-function: ease;
-  animation-duration: 2.5s;
-  animation-fill-mode: forwards;
-}
-
 html {
   animation-name: backgroundcolortransition;
   animation-timing-function: ease;
-  animation-duration: 2.5s;
+  animation-duration: 4s;
   animation-fill-mode: forwards;
 }
 
@@ -162,7 +154,7 @@ body {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-delay: 0.2s;
-  animation-duration: 1.2s;
+  animation-duration: 1.5s;
   opacity: 0;
 }
 .fadein2 {
@@ -170,8 +162,8 @@ body {
   animation-timing-function: ease;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: 0.3s;
-  animation-duration: 1.2s;
+  animation-delay: 0.31s;
+  animation-duration: 1.5s;
   opacity: 0;
 }
 .fadein3 {
@@ -179,8 +171,8 @@ body {
   animation-timing-function: ease;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: 0.4s;
-  animation-duration: 1.2s;
+  animation-delay: 0.42s;
+  animation-duration: 1.5s;
   opacity: 0;
 }
 .fadein4 {
@@ -188,8 +180,8 @@ body {
   animation-timing-function: ease;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: 0.5s;
-  animation-duration: 1.2s;
+  animation-delay: 0.53s;
+  animation-duration: 1.5s;
   opacity: 0;
 }
 .fadein5 {
@@ -197,8 +189,8 @@ body {
   animation-timing-function: ease;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: 0.6s;
-  animation-duration: 1.2s;
+  animation-delay: 0.64s;
+  animation-duration: 1.5s;
   opacity: 0;
 }
 .fadein6{
@@ -206,8 +198,8 @@ body {
   animation-timing-function: ease;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: 0.7s;
-  animation-duration: 1.2s;
+  animation-delay: 0.75s;
+  animation-duration: 1.8s;
   opacity: 0;
 }
 
@@ -244,10 +236,10 @@ body {
 
 @keyframes backgroundcolortransition {
   0% {
-    opacity: 0;
+    filter: brightness(0.3);
   }
   100% {
-    opacity: 1;
+    filter: brightness(1);
   }
 }
 
