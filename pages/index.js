@@ -100,7 +100,7 @@ export default function Home() {
       }
       star.style.left = `${getRandomInt(30, window.innerWidth - 30)}px`;
       if (screen.width < 768) {
-        star.style.left = `${getRandomInt(0, window.innerWidth)}px`;
+        star.style.left = `${getRandomInt(0, window.innerWidth - 15)}px`;
       }
       star.style.color = getColor();
       star.style['animation-delay'] = `${Math.max(((getRandomInt(0, 85) + getRandomInt(0, 85)) / 10) - 2, 3 + (getRandomInt(0, 100) / 100))}s`;
