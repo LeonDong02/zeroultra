@@ -11,14 +11,16 @@
     margin-top: 92px
   }
 
+  html {
+    animation-name: backgroundcolortransition;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+  }
+
 }
 
-html {
-  animation-name: backgroundcolortransition;
-  animation-timing-function: ease;
-  animation-duration: 4s;
-  animation-fill-mode: forwards;
-}
+
 
 html {
   min-height: 100%;
