@@ -45,8 +45,8 @@ export default function Interests({stargaze}) {
                                 co487
                                 </a>
                                 /
-                                <a href='https://uwflow.com/course/cs458' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">
-                                cs458
+                                <a href='https://cs.uwaterloo.ca/~m285xu/courses/cs489-s23' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">
+                                cs489
                                 </a>
                                 ]
                             </span>
