@@ -88,7 +88,7 @@ export default function NowPlaying({stargaze}) {
                             </span>
                             <br></br>
                             <span class="highlight">
-                                <a href={data.songUrl} target="_blank" rel="noopener noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100" >
+                                <a href={data.songUrl} target="_blank" rel="noopener noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100" >
                                     {data.title.toLowerCase() + " - " + data?.artist.toLowerCase()}
                                 </a>
                             </span>
@@ -102,7 +102,7 @@ export default function NowPlaying({stargaze}) {
                             </span>
                             <br></br>
                             <span class="highlight">
-                                <a href="https://open.spotify.com/user/22offyqbuyz7qehcrv7sssa4y?si=6a8ebdaecab045e3" target="_blank" rel="noopener noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">
+                                <a href="https://open.spotify.com/user/22offyqbuyz7qehcrv7sssa4y?si=6a8ebdaecab045e3" target="_blank" rel="noopener noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">
                                     not currently listening
                                 </a>
                             </span>

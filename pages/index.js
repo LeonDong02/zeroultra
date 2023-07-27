@@ -209,9 +209,9 @@ export default function Home() {
       </Head>
       <div class="realbody blurryback">
         { !stargaze ? (
-            <div class="stargazebutton1">[<button class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100 highlight" onClick={() => {setStargaze(true); playSounds();}}>stargaze?</button>]</div>
+            <div class="stargazebutton1">[<button class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100 highlight" onClick={() => {setStargaze(true); playSounds();}}>stargaze?</button>]</div>
         ) : (
-            <div class="stargazebutton1">[<button class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100 highlight" onClick={() => {setStargaze(false);}}>go back</button>]</div>
+            <div class="stargazebutton1">[<button class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100 highlight" onClick={() => {setStargaze(false);}}>go back</button>]</div>
         )}
         <div class={stargaze ? "fadeout1 flex flex-col md:flex-row h-100 md:h-48 mt-12 md:mt-0 mb-2.5" : "fadein1 flex flex-col md:flex-row h-100 md:h-48 mt-12 md:mt-0 mb-2.5"}>
           {/* <script src='./coolstuff/sparkle.js' async></script>
@@ -224,20 +224,20 @@ export default function Home() {
             <div>
               <span class="highlight">
                 i&apos;m a 3rd year computer science student with a minor in combinatorics and optimization @&nbsp;
-                <a href='https://uwaterloo.ca/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">uwaterloo</a>
-                , seeking fall 2023 internships
+                <a href='https://uwaterloo.ca/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">uwaterloo</a>
+                , seeking summer/fall 2024 internships
               </span>
             </div>
             <br></br>
             <div>
               <span class="highlight">
-                incoming mobile eng intern @ <a href='https://www.linkedin.com' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">linkedin</a> and previously, mobile eng intern @ <a href='https://www.ecobee.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">ecobee</a>, <a href='https://steeresg.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">facedrive</a>
+                incoming mobile eng intern @ <a href='https://www.linkedin.com' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">linkedin</a> and previously, mobile eng intern @ <a href='https://www.ecobee.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">ecobee</a>, <a href='https://steeresg.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">facedrive</a>
               </span>
               <br></br>
             </div>
             <br></br>
             <span class="highlight">
-              <a href='Resume.pdf' target="_blank" rel="noreferrer" class="text-[15px] transition ease-in-out underline text-violet-500 hover:text-violet-700 duration-100">
+              <a href='Resume.pdf' target="_blank" rel="noreferrer" class="text-[15px] transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">
                 resume
               </a>
             </span>
