@@ -223,15 +223,15 @@ export default function Home() {
             <div class="text-3xl font-bold my-1.5 md:my-2.5"><span class="highlight">leon dong</span></div>
             <div>
               <span class="highlight">
-                i&apos;m a 3rd year computer science student with a minor in combinatorics and optimization @&nbsp;
+                i&apos;m a 4th year computer science student with a minor in combinatorics and optimization @&nbsp;
                 <a href='https://uwaterloo.ca/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">uwaterloo</a>
-                , seeking summer/fall 2024 internships
+                , seeking fall 2024 internships
               </span>
             </div>
             <br></br>
             <div>
               <span class="highlight">
-                swe @ <a href='https://www.intuit.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">intuit</a> and prev swe @ <a href='https://www.linkedin.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">linkedin</a>, <a href='https://www.ecobee.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">ecobee</a>, <a href='https://steeresg.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">facedrive</a>
+                incoming swe @ <a href='https://www.databricks.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">databricks</a>, swe @ <a href='https://www.intuit.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">intuit</a>, and prev swe @ <a href='https://www.linkedin.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">linkedin</a>, <a href='https://www.ecobee.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">ecobee</a>, <a href='https://steeresg.com/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">facedrive</a>
               </span>
               <br></br>
             </div>
