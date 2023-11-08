@@ -37,18 +37,18 @@ export default function Interests({stargaze}) {
                                 issessions
                                 </a>
                                 /
-                                <a href='https://picoctf.org/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">
-                                picoctf
-                                </a>
-                                /
                                 <a href='https://uwflow.com/course/co487' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">
                                 co487
                                 </a>
                                 /
                                 <a href='https://cs.uwaterloo.ca/~m285xu/courses/cs489-s23' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">
-                                cs489
+                                cs489s23
                                 </a>
                                 ]
+                                /
+                                <a href='https://sites.google.com/view/mdhajiabadi/cs-489698' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">
+                                cs489f23
+                                </a>
                             </span>
                         </li>
                         <li class="mb-1">
@@ -70,9 +70,9 @@ export default function Interests({stargaze}) {
                     <ul>
                         <li class="mb-1">
                             <span class="highlight">
-                                bioinformatics <br></br>[
-                                <a href='https://uwflow.com/course/cs482' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">
-                                cs482
+                                distributed computing <br></br>[
+                                <a href='https://uwflow.com/course/cs451' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">
+                                cs451
                                 </a>
                                 ]
                             </span>
@@ -90,7 +90,7 @@ export default function Interests({stargaze}) {
                             <span class="highlight">
                                 others <br></br>[
                                 <span class="text-violet-600">
-                                uiux
+                                bioinformatics
                                 </span>
                                 /
                                 <span class="text-violet-600">
