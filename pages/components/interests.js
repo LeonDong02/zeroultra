@@ -44,11 +44,11 @@ export default function Interests({stargaze}) {
                                 <a href='https://cs.uwaterloo.ca/~m285xu/courses/cs489-s23' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">
                                 cs489s23
                                 </a>
-                                ]
                                 /
                                 <a href='https://sites.google.com/view/mdhajiabadi/cs-489698' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">
                                 cs489f23
                                 </a>
+                                ]
                             </span>
                         </li>
                         <li class="mb-1">
