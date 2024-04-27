@@ -11,7 +11,7 @@ export default function Interests({stargaze}) {
                     <ul>
                         <li class="mb-1">
                             <span class="highlight">
-                                agi/ml <br></br>[
+                                artificial intelligence <br></br>[
                                 <a href='https://www.coherentapp.tech/' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">
                                 coherent
                                 </a>
@@ -22,10 +22,6 @@ export default function Interests({stargaze}) {
                                 /
                                 <a href='https://uwflow.com/course/cs486' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">
                                 cs486
-                                </a>
-                                /
-                                <a href='https://uwflow.com/course/cs484' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">
-                                cs484
                                 </a>
                                 ]
                             </span>
@@ -51,6 +47,10 @@ export default function Interests({stargaze}) {
                                 ]
                             </span>
                         </li>
+                    </ul>
+                </div>
+                <div class="basis-1/2">
+                    <ul>
                         <li class="mb-1">
                             <span class="highlight">
                                 web3 <br></br>[
@@ -64,42 +64,20 @@ export default function Interests({stargaze}) {
                                 ]
                             </span>
                         </li>
-                    </ul>
-                </div>
-                <div class="basis-1/2">
-                    <ul>
-                        <li class="mb-1">
-                            <span class="highlight">
-                                distributed computing <br></br>[
-                                <a href='https://uwflow.com/course/cs451' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">
-                                cs451
-                                </a>
-                                ]
-                            </span>
-                        </li>
-                        <li class="mb-1">
-                            <span class="highlight">
-                                quantum computing <br></br>[
-                                <a href='https://uwflow.com/course/co481' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">
-                                co481
-                                </a>
-                                ]
-                            </span>
-                        </li>
                         <li class="mb-1">
                             <span class="highlight">
                                 others <br></br>[
-                                <span class="text-violet-600">
+                                <a href='https://uwflow.com/course/cs482' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">
                                 bioinformatics
-                                </span>
+                                </a>
                                 /
-                                <span class="text-violet-600">
-                                gamedev
-                                </span>
+                                <a href='https://uwflow.com/course/cs451' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">
+                                distributed computing
+                                </a>
                                 /
-                                <span class="text-violet-600">
-                                hft
-                                </span>
+                                <a href='https://uwflow.com/course/co481' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">
+                                quantum computing
+                                </a>
                                 ]
                             </span>
                         </li>
