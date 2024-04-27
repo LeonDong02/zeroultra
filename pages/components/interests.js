@@ -76,7 +76,7 @@ export default function Interests({stargaze}) {
                                 </a>
                                 /
                                 <a href='https://uwflow.com/course/co481' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">
-                                quantum computing
+                                quantum
                                 </a>
                                 ]
                             </span>
