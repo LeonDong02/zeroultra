@@ -237,7 +237,7 @@ export default function Home() {
             </div>
             <br></br>
             <span class="highlight">
-              <a href='Resume.pdf' target="_blank" rel="noreferrer" class="text-[15px] transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">
+              <a href='LeonDongResume.pdf' target="_blank" rel="noreferrer" class="text-[15px] transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">
                 resume
               </a>
             </span>
