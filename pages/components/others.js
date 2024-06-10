@@ -64,7 +64,7 @@ export default function Others({stargaze}) {
                                     channel
                                     </a>
                                     /
-                                    <a href='https://tracker.gg/valorant/profile/riot/mc2van%23na1/overview' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">
+                                    <a href='https://tracker.gg/valorant/profile/riot/dullscythe%23nurtr/overview' target="_blank" rel="noreferrer" class="transition ease-in-out underline text-violet-600 hover:text-violet-700 duration-100">
                                     tracker
                                     </a>
                                     ]
